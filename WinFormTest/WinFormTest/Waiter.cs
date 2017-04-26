@@ -5,11 +5,12 @@ using System.Text;
 
 namespace WinFormTest
 {
-    public class Host : Manager
+    public class Waiter : Manager
     {
-        private string tableStatus;
+        private string orders;
+        private boolean tablesAvailble;
 
-        public string TableStatus
+        public string Orders
         {
             get
             {
@@ -21,9 +22,16 @@ namespace WinFormTest
             }
         }
 
-        public void ChangeTableStatus()
+        public bool TablesAvailble
         {
-            throw new System.NotImplementedException();
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
         }
     }
 }
