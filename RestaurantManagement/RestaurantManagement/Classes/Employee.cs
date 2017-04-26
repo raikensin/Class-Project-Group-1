@@ -11,6 +11,7 @@ namespace RestaurantManagement
         private string employeeFirstName;
         private string employeeLastName;
         private double hours;
+        private double wages;
 
         public int EmployeeID
         {
@@ -57,6 +58,19 @@ namespace RestaurantManagement
 
             set
             {
+            }
+        }
+
+        public double Wages
+        {
+            get
+            {
+                return wages;
+            }
+
+            set
+            {
+                wages = value;
             }
         }
 

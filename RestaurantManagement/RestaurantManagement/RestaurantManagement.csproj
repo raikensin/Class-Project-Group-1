@@ -46,23 +46,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EmployeeClasses\Busboy.cs" />
-    <Compile Include="EmployeeClasses\Cook.cs" />
-    <Compile Include="EmployeeClasses\Employee.cs" />
-    <Compile Include="EmployeeClasses\Host.cs" />
-    <Compile Include="EmployeeClasses\Item.cs" />
-    <Compile Include="EmployeeClasses\Manager.cs" />
-    <Compile Include="EmployeeClasses\Program.cs" />
-    <Compile Include="EmployeeClasses\Seating.cs" />
-    <Compile Include="EmployeeClasses\Waiter.cs" />
+    <Compile Include="Classes\Busboy.cs" />
+    <Compile Include="Classes\Cook.cs" />
+    <Compile Include="Classes\Employee.cs" />
+    <Compile Include="Classes\Host.cs" />
+    <Compile Include="Classes\Item.cs" />
+    <Compile Include="Classes\Manager.cs" />
+    <Compile Include="Classes\Program.cs" />
+    <Compile Include="Classes\Seating.cs" />
+    <Compile Include="Classes\Waiter.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\IAdmin.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
