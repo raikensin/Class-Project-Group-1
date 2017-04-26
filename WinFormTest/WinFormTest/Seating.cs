@@ -5,13 +5,13 @@ using System.Text;
 
 namespace WinFormTest
 {
-    public class Items : Manager
+    public class Seating : Host
     {
-        private string food;
-        private double cost;
-        private int quantity;
+        private int tableID;
+        private string availabilty;
+        private int hoursOccupied;
 
-        public string Food
+        public int TableID
         {
             get
             {
@@ -23,7 +23,7 @@ namespace WinFormTest
             }
         }
 
-        public double Cost
+        public string Availabilty
         {
             get
             {
@@ -35,7 +35,7 @@ namespace WinFormTest
             }
         }
 
-        public int Quantity
+        public int HoursOccupied
         {
             get
             {
@@ -45,11 +45,6 @@ namespace WinFormTest
             set
             {
             }
-        }
-
-        public void GetInventory()
-        {
-            throw new System.NotImplementedException();
         }
     }
 }
