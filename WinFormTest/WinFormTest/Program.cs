@@ -14,9 +14,11 @@ namespace WinFormTest
         [STAThread]
         static void Main()
         {
+            // Mike was here.
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            // hey!!!!! 
         }
     }
 }
