@@ -40,6 +40,8 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.button11 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnLogin1
@@ -129,7 +131,7 @@
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(137, 59);
             this.button10.TabIndex = 9;
-            this.button10.Text = "10";
+            this.button10.Text = "0";
             this.button10.UseVisualStyleBackColor = true;
             // 
             // button1
@@ -144,19 +146,37 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Franklin Gothic Book", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label1.Location = new System.Drawing.Point(163, 46);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(171, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(410, 34);
             this.label1.TabIndex = 11;
             this.label1.Text = "Enter Your Number";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(490, 338);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(108, 37);
+            this.button11.TabIndex = 12;
+            this.button11.Text = "Back";
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(254, 95);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(236, 20);
+            this.textBox1.TabIndex = 13;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(772, 413);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button11);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button10);
@@ -173,6 +193,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -190,6 +211,8 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
