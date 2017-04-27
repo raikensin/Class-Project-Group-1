@@ -26,7 +26,7 @@ namespace WinFormTest
         {
             get
             {
-                throw new System.NotImplementedException();
+                
             }
 
             set
