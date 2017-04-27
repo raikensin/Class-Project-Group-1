@@ -7,7 +7,7 @@ namespace WinFormTest
 {
     public class Cook
     {
-        private int orders;
+        private string orders;
 
         public string Orders
         {
