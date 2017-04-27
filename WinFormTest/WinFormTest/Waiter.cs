@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WinFormTest
 {
-    public class Waiter : Manager
+    public class Waiter : Employees
     {
         private string orders;
         private boolean tablesAvailble;

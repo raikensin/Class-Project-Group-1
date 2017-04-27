@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WinFormTest
 {
-    public class Items : Manager
+    public class Items
     {
         private string food;
         private double cost;
