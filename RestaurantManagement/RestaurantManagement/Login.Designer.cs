@@ -143,6 +143,7 @@
             this.btnLoginLoginForm.TabIndex = 10;
             this.btnLoginLoginForm.Text = "Login";
             this.btnLoginLoginForm.UseVisualStyleBackColor = true;
+            this.btnLoginLoginForm.Click += new System.EventHandler(this.btnLoginLoginForm_Click);
             // 
             // label1
             // 
@@ -179,7 +180,7 @@
             this.statusStrip1.TabIndex = 14;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // Form1
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -199,7 +200,7 @@
             this.Controls.Add(this.btn3LoginForm);
             this.Controls.Add(this.btn2LoginForm);
             this.Controls.Add(this.btn1LoginForm);
-            this.Name = "Form1";
+            this.Name = "Login";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
