@@ -9,62 +9,34 @@ namespace WinFormTest
     {
         private string tableStatus;
         private string tableAvailable;
-        private string orders;
+        private int orders;
 
-        public string TableStatus
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+        public string TableStatus { get; set; }
+       
 
-            set
-            {
-            }
-        }
+        public string TableAvailable { get; set; }
+        
 
-        public string TableAvailable
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
-
-        public string Orders
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
-
+        public string Orders { get; set; }
+       
         public void DeleteOrders()
         {
-            throw new System.NotImplementedException();
+            
         }
 
         public void OrderStatus()
         {
-            throw new System.NotImplementedException();
+            
         }
 
         public void ViewOrders()
         {
-            throw new System.NotImplementedException();
+            
         }
 
         public void ChangeTableStatus()
         {
-            throw new System.NotImplementedException();
+            
         }
     }
 }
