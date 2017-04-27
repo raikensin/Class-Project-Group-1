@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace WinFormTest
+namespace RestaurantManagement
 {
-    public class Waiter : Employees
+    public class Seating
     {
-        private string orders;
-        private boolean tablesAvailble;
+        private int tableID;
+        private string availabilty;
+        private int hoursOccupied;
 
-        public string Orders
+        public int TableID
         {
             get
             {
@@ -22,7 +23,19 @@ namespace WinFormTest
             }
         }
 
-        public bool TablesAvailble
+        public string Availabilty
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
+
+        public int HoursOccupied
         {
             get
             {

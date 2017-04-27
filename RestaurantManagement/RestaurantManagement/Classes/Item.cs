@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace WinFormTest
+namespace RestaurantManagement
 {
-    public class Items
+    public class Item
     {
         private string food;
         private double cost;

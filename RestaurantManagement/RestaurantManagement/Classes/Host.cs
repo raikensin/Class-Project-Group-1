@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace WinFormTest
+namespace RestaurantManagement
 {
-    public class Host : Employees
+    public class Host : Employee
     {
         private string tableStatus;
 

@@ -5,12 +5,12 @@ using System.Text;
 
 namespace WinFormTest
 {
-    public class Waiter : Employees
+    public class Orders : Items
     {
-        private string orders;
-        private boolean tablesAvailble;
+        private int orderNumber;
+        private string order;
 
-        public string Orders
+        public int OrderNumber
         {
             get
             {
@@ -22,16 +22,26 @@ namespace WinFormTest
             }
         }
 
-        public bool TablesAvailble
+        public string Order
         {
             get
             {
-                throw new System.NotImplementedException();
+                
             }
 
             set
             {
             }
+        }
+
+        public void AddOrders()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void EditOrders()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

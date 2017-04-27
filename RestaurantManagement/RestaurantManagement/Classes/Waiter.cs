@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace WinFormTest
+namespace RestaurantManagement
 {
-    public class Waiter : Employees
+    public class Waiter : Employee
     {
         private string orders;
-        private boolean tablesAvailble;
+        private bool tablesAvailble;
 
         public string Orders
         {
