@@ -23,7 +23,7 @@
       <FileName>Waiter.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="WinFormTest.Cook">
+  <Class Name="WinFormTest.Chef">
     <Position X="8" Y="3.5" Width="1.5" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
@@ -32,7 +32,7 @@
     </Compartments>
     <TypeIdentifier>
       <HashCode>AAEAAAABAAACAAAAAAAAAAAAAAAAAAAAAEAAAACAAAA=</HashCode>
-      <FileName>Cook.cs</FileName>
+      <FileName>Chef.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WinFormTest.Manager">
@@ -49,7 +49,7 @@
       <FileName>Seating.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="WinFormTest.Busboy">
+  <Class Name="WinFormTest.Buser">
     <Position X="10" Y="3.5" Width="1.5" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
@@ -58,7 +58,7 @@
     </Compartments>
     <TypeIdentifier>
       <HashCode>AAAAACAAAAAgAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
-      <FileName>Busboy.cs</FileName>
+      <FileName>Buser.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WinFormTest.Items">

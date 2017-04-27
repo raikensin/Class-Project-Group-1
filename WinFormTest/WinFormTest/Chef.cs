@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WinFormTest
 {
-    public class Cook : Manager
+    public class Chef : Manager
     {
         private int orders;
 
