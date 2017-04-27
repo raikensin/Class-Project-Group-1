@@ -28,120 +28,121 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnLogin1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn1LoginForm = new System.Windows.Forms.Button();
+            this.btn2LoginForm = new System.Windows.Forms.Button();
+            this.btn3LoginForm = new System.Windows.Forms.Button();
+            this.btn4LoginForm = new System.Windows.Forms.Button();
+            this.btn5LoginForm = new System.Windows.Forms.Button();
+            this.btn6LoginForm = new System.Windows.Forms.Button();
+            this.btn7LoginForm = new System.Windows.Forms.Button();
+            this.btn8LoginForm = new System.Windows.Forms.Button();
+            this.btn9LoginForm = new System.Windows.Forms.Button();
+            this.btn0LoginForm = new System.Windows.Forms.Button();
+            this.btnLoginLoginForm = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button11 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnBackLoginForm = new System.Windows.Forms.Button();
+            this.txtBoxLogin = new System.Windows.Forms.TextBox();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.SuspendLayout();
             // 
-            // btnLogin1
+            // btn1LoginForm
             // 
-            this.btnLogin1.Location = new System.Drawing.Point(131, 132);
-            this.btnLogin1.Name = "btnLogin1";
-            this.btnLogin1.Size = new System.Drawing.Size(137, 59);
-            this.btnLogin1.TabIndex = 0;
-            this.btnLogin1.Text = "1";
-            this.btnLogin1.UseVisualStyleBackColor = true;
+            this.btn1LoginForm.Location = new System.Drawing.Point(131, 132);
+            this.btn1LoginForm.Name = "btn1LoginForm";
+            this.btn1LoginForm.Size = new System.Drawing.Size(137, 59);
+            this.btn1LoginForm.TabIndex = 0;
+            this.btn1LoginForm.Text = "1";
+            this.btn1LoginForm.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btn2LoginForm
             // 
-            this.button2.Location = new System.Drawing.Point(303, 132);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(137, 59);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn2LoginForm.Location = new System.Drawing.Point(303, 132);
+            this.btn2LoginForm.Name = "btn2LoginForm";
+            this.btn2LoginForm.Size = new System.Drawing.Size(137, 59);
+            this.btn2LoginForm.TabIndex = 1;
+            this.btn2LoginForm.Text = "2";
+            this.btn2LoginForm.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btn3LoginForm
             // 
-            this.button3.Location = new System.Drawing.Point(476, 132);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(137, 59);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn3LoginForm.Location = new System.Drawing.Point(476, 132);
+            this.btn3LoginForm.Name = "btn3LoginForm";
+            this.btn3LoginForm.Size = new System.Drawing.Size(137, 59);
+            this.btn3LoginForm.TabIndex = 2;
+            this.btn3LoginForm.Text = "3";
+            this.btn3LoginForm.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btn4LoginForm
             // 
-            this.button4.Location = new System.Drawing.Point(131, 197);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(137, 59);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn4LoginForm.Location = new System.Drawing.Point(131, 197);
+            this.btn4LoginForm.Name = "btn4LoginForm";
+            this.btn4LoginForm.Size = new System.Drawing.Size(137, 59);
+            this.btn4LoginForm.TabIndex = 3;
+            this.btn4LoginForm.Text = "4";
+            this.btn4LoginForm.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btn5LoginForm
             // 
-            this.button5.Location = new System.Drawing.Point(303, 197);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(137, 59);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btn5LoginForm.Location = new System.Drawing.Point(303, 197);
+            this.btn5LoginForm.Name = "btn5LoginForm";
+            this.btn5LoginForm.Size = new System.Drawing.Size(137, 59);
+            this.btn5LoginForm.TabIndex = 4;
+            this.btn5LoginForm.Text = "5";
+            this.btn5LoginForm.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btn6LoginForm
             // 
-            this.button6.Location = new System.Drawing.Point(476, 197);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(137, 59);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btn6LoginForm.Location = new System.Drawing.Point(476, 197);
+            this.btn6LoginForm.Name = "btn6LoginForm";
+            this.btn6LoginForm.Size = new System.Drawing.Size(137, 59);
+            this.btn6LoginForm.TabIndex = 5;
+            this.btn6LoginForm.Text = "6";
+            this.btn6LoginForm.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btn7LoginForm
             // 
-            this.button7.Location = new System.Drawing.Point(131, 262);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(137, 59);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btn7LoginForm.Location = new System.Drawing.Point(131, 262);
+            this.btn7LoginForm.Name = "btn7LoginForm";
+            this.btn7LoginForm.Size = new System.Drawing.Size(137, 59);
+            this.btn7LoginForm.TabIndex = 6;
+            this.btn7LoginForm.Text = "7";
+            this.btn7LoginForm.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btn8LoginForm
             // 
-            this.button8.Location = new System.Drawing.Point(303, 262);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(137, 59);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "8";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btn8LoginForm.Location = new System.Drawing.Point(303, 262);
+            this.btn8LoginForm.Name = "btn8LoginForm";
+            this.btn8LoginForm.Size = new System.Drawing.Size(137, 59);
+            this.btn8LoginForm.TabIndex = 7;
+            this.btn8LoginForm.Text = "8";
+            this.btn8LoginForm.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // btn9LoginForm
             // 
-            this.button9.Location = new System.Drawing.Point(476, 262);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(137, 59);
-            this.button9.TabIndex = 8;
-            this.button9.Text = "9";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btn9LoginForm.Location = new System.Drawing.Point(476, 262);
+            this.btn9LoginForm.Name = "btn9LoginForm";
+            this.btn9LoginForm.Size = new System.Drawing.Size(137, 59);
+            this.btn9LoginForm.TabIndex = 8;
+            this.btn9LoginForm.Text = "9";
+            this.btn9LoginForm.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // btn0LoginForm
             // 
-            this.button10.Location = new System.Drawing.Point(303, 327);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(137, 59);
-            this.button10.TabIndex = 9;
-            this.button10.Text = "0";
-            this.button10.UseVisualStyleBackColor = true;
+            this.btn0LoginForm.Location = new System.Drawing.Point(303, 327);
+            this.btn0LoginForm.Name = "btn0LoginForm";
+            this.btn0LoginForm.Size = new System.Drawing.Size(137, 59);
+            this.btn0LoginForm.TabIndex = 9;
+            this.btn0LoginForm.Text = "0";
+            this.btn0LoginForm.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnLoginLoginForm
             // 
-            this.button1.Location = new System.Drawing.Point(150, 338);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 37);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnLoginLoginForm.Location = new System.Drawing.Point(150, 338);
+            this.btnLoginLoginForm.Name = "btnLoginLoginForm";
+            this.btnLoginLoginForm.Size = new System.Drawing.Size(103, 37);
+            this.btnLoginLoginForm.TabIndex = 10;
+            this.btnLoginLoginForm.Text = "Login";
+            this.btnLoginLoginForm.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -154,41 +155,50 @@
             this.label1.Text = "Enter Your Number";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button11
+            // btnBackLoginForm
             // 
-            this.button11.Location = new System.Drawing.Point(490, 338);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(108, 37);
-            this.button11.TabIndex = 12;
-            this.button11.Text = "Back";
-            this.button11.UseVisualStyleBackColor = true;
+            this.btnBackLoginForm.Location = new System.Drawing.Point(492, 338);
+            this.btnBackLoginForm.Name = "btnBackLoginForm";
+            this.btnBackLoginForm.Size = new System.Drawing.Size(108, 37);
+            this.btnBackLoginForm.TabIndex = 12;
+            this.btnBackLoginForm.Text = "Back";
+            this.btnBackLoginForm.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtBoxLogin
             // 
-            this.textBox1.Location = new System.Drawing.Point(254, 95);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(236, 20);
-            this.textBox1.TabIndex = 13;
+            this.txtBoxLogin.Location = new System.Drawing.Point(254, 95);
+            this.txtBoxLogin.Name = "txtBoxLogin";
+            this.txtBoxLogin.Size = new System.Drawing.Size(236, 20);
+            this.txtBoxLogin.TabIndex = 13;
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Location = new System.Drawing.Point(0, 391);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(772, 22);
+            this.statusStrip1.TabIndex = 14;
+            this.statusStrip1.Text = "statusStrip1";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(772, 413);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button11);
+            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.txtBoxLogin);
+            this.Controls.Add(this.btnBackLoginForm);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnLogin1);
+            this.Controls.Add(this.btnLoginLoginForm);
+            this.Controls.Add(this.btn0LoginForm);
+            this.Controls.Add(this.btn9LoginForm);
+            this.Controls.Add(this.btn8LoginForm);
+            this.Controls.Add(this.btn7LoginForm);
+            this.Controls.Add(this.btn6LoginForm);
+            this.Controls.Add(this.btn5LoginForm);
+            this.Controls.Add(this.btn4LoginForm);
+            this.Controls.Add(this.btn3LoginForm);
+            this.Controls.Add(this.btn2LoginForm);
+            this.Controls.Add(this.btn1LoginForm);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -199,20 +209,21 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnLogin1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn1LoginForm;
+        private System.Windows.Forms.Button btn2LoginForm;
+        private System.Windows.Forms.Button btn3LoginForm;
+        private System.Windows.Forms.Button btn4LoginForm;
+        private System.Windows.Forms.Button btn5LoginForm;
+        private System.Windows.Forms.Button btn6LoginForm;
+        private System.Windows.Forms.Button btn7LoginForm;
+        private System.Windows.Forms.Button btn8LoginForm;
+        private System.Windows.Forms.Button btn9LoginForm;
+        private System.Windows.Forms.Button btn0LoginForm;
+        private System.Windows.Forms.Button btnLoginLoginForm;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnBackLoginForm;
+        private System.Windows.Forms.TextBox txtBoxLogin;
+        private System.Windows.Forms.StatusStrip statusStrip1;
     }
 }
 
