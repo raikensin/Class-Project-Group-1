@@ -9,17 +9,8 @@ namespace RestaurantManagement
     {
         private int orders;
 
-        public string Orders
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
+        public string Orders { get; set; }
+        
 
         public void ViewOrders()
         {
