@@ -12,7 +12,11 @@ namespace RestaurantManagement
         private string employeeLastName;
         private double hours;
         private double wages;
-
+        private int hostLogin=1;
+        private int busboyLogin=2;
+        private int cookLogin=3;
+        private int managerLogin=4;
+        private int waiterLogin=5;
         public int EmployeeID { get; set; }
         //{
         //    get

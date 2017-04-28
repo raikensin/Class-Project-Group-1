@@ -143,8 +143,7 @@
             this.btnLoginLoginForm.TabIndex = 10;
             this.btnLoginLoginForm.Text = "Login";
             this.btnLoginLoginForm.UseVisualStyleBackColor = true;
-            this.btnLoginLoginForm.Click += new System.EventHandler(this.btnLoginLoginForm_Click);
-            // 
+            
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Franklin Gothic Book", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
