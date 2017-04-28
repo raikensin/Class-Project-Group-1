@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RestaurantManagement
 {
-    public class Manager : Employee
+    public class Manager : Employee, IAdmin
     {
          
         private string tableStatus;
@@ -22,7 +22,7 @@ namespace RestaurantManagement
 
         public void DeleteOrders()
         {
-
+          
         }
 
         public void OrderStatus()

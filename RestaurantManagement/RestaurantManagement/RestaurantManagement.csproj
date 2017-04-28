@@ -55,10 +55,10 @@
     <Compile Include="Classes\Program.cs" />
     <Compile Include="Classes\Seating.cs" />
     <Compile Include="Classes\Waiter.cs" />
-    <Compile Include="FloorPlanForm.cs">
+    <Compile Include="Classes\FloorPlanForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FloorPlanForm.Designer.cs">
+    <Compile Include="Classes\FloorPlanForm.Designer.cs">
       <DependentUpon>FloorPlanForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuForm.cs">
@@ -76,7 +76,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FloorPlanForm.resx">
+    <EmbeddedResource Include="Classes\FloorPlanForm.resx">
       <DependentUpon>FloorPlanForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuForm.resx">
