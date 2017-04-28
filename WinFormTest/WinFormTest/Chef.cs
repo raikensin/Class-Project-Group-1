@@ -5,11 +5,11 @@ using System.Text;
 
 namespace WinFormTest
 {
-    public class Busboy : Employees
+    public class Chef : Manager
     {
-        private string tableStatus;
+        private int orders;
 
-        public string TableStatus
+        public string Orders
         {
             get
             {
@@ -21,7 +21,17 @@ namespace WinFormTest
             }
         }
 
-        public void ChangeTableStatus()
+        public void ViewOrders()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void DeleteOrders()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void OrderStatus()
         {
             throw new System.NotImplementedException();
         }

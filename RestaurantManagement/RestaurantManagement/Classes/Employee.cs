@@ -12,54 +12,58 @@ namespace RestaurantManagement
         private string employeeLastName;
         private double hours;
         private double wages;
+        private int hostLogin=1;
+        private int busboyLogin=2;
+        private int cookLogin=3;
+        private int managerLogin=4;
+        private int waiterLogin=5;
+        public int EmployeeID { get; set; }
+        //{
+        //    get
+        //    {
+        //        throw new System.NotImplementedException();
+        //    }
 
-        public int EmployeeID
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+        //    set
+        //    {
+        //    }
+        //}
 
-            set
-            {
-            }
-        }
+        public string EmployeeFirstName { get; set; }
+        //{
+        //    get
+        //    {
+        //        throw new System.NotImplementedException();
+        //    }
 
-        public string EmployeeFirstName
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+        //    set
+        //    {
+        //    }
+        //}
 
-            set
-            {
-            }
-        }
+        public string EmployeeLastName { get; set; }
+        //{
+        //    get
+        //    {
+        //        throw new System.NotImplementedException();
+        //    }
 
-        public string EmployeeLastName
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+        //    set
+        //    {
+        //    }
+        //}
 
-            set
-            {
-            }
-        }
+        public double Hours { get; set; }
+        //{
+        //    get
+        //    {
+        //        throw new System.NotImplementedException();
+        //    }
 
-        public double Hours
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
+        //    set
+        //    {
+        //    }
+        //}
 
         public double Wages
         {
