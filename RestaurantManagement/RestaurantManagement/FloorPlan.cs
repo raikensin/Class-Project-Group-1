@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace RestaurantManagement
 {
-    public partial class FloorPlanForm : Form
+    public partial class FloorPlan : Form
     {
-        public FloorPlanForm()
+        public FloorPlan()
         {
             InitializeComponent();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FloorPlan_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

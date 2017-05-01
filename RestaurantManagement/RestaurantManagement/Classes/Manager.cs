@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RestaurantManagement
 {
-    public class Manager : Employee, IAdmin
+    public class ManagerForm : Employee, IAdmin
     // the manager needs to be able to lo ginto the IAdmin
     // forms straight from the initial log in screen
 
