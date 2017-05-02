@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Manage));
             this.btnEmployees = new System.Windows.Forms.Button();
             this.btnAssignTables = new System.Windows.Forms.Button();
-            this.btnRemoveEmployee = new System.Windows.Forms.Button();
             this.btnAddEmployee = new System.Windows.Forms.Button();
             this.btnmenu = new System.Windows.Forms.Button();
             this.btnLogOut = new System.Windows.Forms.Button();
@@ -57,7 +56,7 @@
             // 
             // btnEmployees
             // 
-            this.btnEmployees.Location = new System.Drawing.Point(659, 35);
+            this.btnEmployees.Location = new System.Drawing.Point(659, 90);
             this.btnEmployees.Margin = new System.Windows.Forms.Padding(2);
             this.btnEmployees.Name = "btnEmployees";
             this.btnEmployees.Size = new System.Drawing.Size(164, 43);
@@ -68,27 +67,17 @@
             // 
             // btnAssignTables
             // 
-            this.btnAssignTables.Location = new System.Drawing.Point(659, 189);
+            this.btnAssignTables.Location = new System.Drawing.Point(659, 154);
             this.btnAssignTables.Margin = new System.Windows.Forms.Padding(2);
             this.btnAssignTables.Name = "btnAssignTables";
-            this.btnAssignTables.Size = new System.Drawing.Size(164, 50);
+            this.btnAssignTables.Size = new System.Drawing.Size(164, 41);
             this.btnAssignTables.TabIndex = 1;
             this.btnAssignTables.Text = "Assign Tables";
             this.btnAssignTables.UseVisualStyleBackColor = true;
             // 
-            // btnRemoveEmployee
-            // 
-            this.btnRemoveEmployee.Location = new System.Drawing.Point(659, 139);
-            this.btnRemoveEmployee.Margin = new System.Windows.Forms.Padding(2);
-            this.btnRemoveEmployee.Name = "btnRemoveEmployee";
-            this.btnRemoveEmployee.Size = new System.Drawing.Size(164, 44);
-            this.btnRemoveEmployee.TabIndex = 2;
-            this.btnRemoveEmployee.Text = "Remove Emoloyee";
-            this.btnRemoveEmployee.UseVisualStyleBackColor = true;
-            // 
             // btnAddEmployee
             // 
-            this.btnAddEmployee.Location = new System.Drawing.Point(659, 87);
+            this.btnAddEmployee.Location = new System.Drawing.Point(659, 34);
             this.btnAddEmployee.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddEmployee.Name = "btnAddEmployee";
             this.btnAddEmployee.Size = new System.Drawing.Size(164, 43);
@@ -108,10 +97,10 @@
             // 
             // btnLogOut
             // 
-            this.btnLogOut.Location = new System.Drawing.Point(659, 248);
+            this.btnLogOut.Location = new System.Drawing.Point(659, 221);
             this.btnLogOut.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(164, 50);
+            this.btnLogOut.Size = new System.Drawing.Size(164, 41);
             this.btnLogOut.TabIndex = 5;
             this.btnLogOut.Text = "Logout";
             this.btnLogOut.UseVisualStyleBackColor = true;
@@ -122,7 +111,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(25, 22);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(206, 181);
+            this.pictureBox1.Size = new System.Drawing.Size(205, 217);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
@@ -283,7 +272,6 @@
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.btnmenu);
             this.Controls.Add(this.btnAddEmployee);
-            this.Controls.Add(this.btnRemoveEmployee);
             this.Controls.Add(this.btnAssignTables);
             this.Controls.Add(this.btnEmployees);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -301,7 +289,6 @@
 
         private System.Windows.Forms.Button btnEmployees;
         private System.Windows.Forms.Button btnAssignTables;
-        private System.Windows.Forms.Button btnRemoveEmployee;
         private System.Windows.Forms.Button btnAddEmployee;
         private System.Windows.Forms.Button btnmenu;
         private System.Windows.Forms.Button btnLogOut;
