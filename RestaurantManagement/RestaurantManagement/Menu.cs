@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace RestaurantManagement
 {
-    public partial class Menu : Form
+    public partial class Menu : Form 
     {
         public Menu()
         {
@@ -53,6 +53,74 @@ namespace RestaurantManagement
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddOrder_Click(object sender, EventArgs e)
+        {
+            
+            if(chkHamburger.Checked == true)
+            {
+                //if the hamburger check box is checked add to the txtbox order list.
+                txtOrdersList.Text += "Hamburger" + "/n";
+                //get the total from item class
+            }
+            if (chkDoublePatty.Checked == true)
+            {
+                txtOrdersList.Text += "Double Patty" + "/n";
+            }
+            if (chkTomato.Checked == true)
+            {
+                txtOrdersList.Text = "Tomato" + "/n";
+            }
+            if (chkOnions.Checked == true)
+            {
+                txtOrdersList.Text += "Onions" + "/n";
+            }
+            if (chkLettuce.Checked == true)
+            {
+                txtOrdersList.Text += "Lettuce" + "/n";
+            }
+            if (chkPickles.Checked == true)
+            {
+                txtOrdersList.Text += "Pickles" + "/n";
+            }
+            if (chkHouseSalad.Checked == true)
+            {
+                txtOrdersList.Text += "House Salad" + "/n";
+            }
+            if (chkGardenSalad.Checked == true)
+            {
+                txtOrdersList.Text += "Garden Salad" + "/n";
+            }
+            if (chkFruitSalad.Checked == true)
+            {
+                txtOrdersList.Text += "Fruit Salad" + "/n";
+            }
+            if (chkPlainSalad.Checked == true)
+            {
+                txtOrdersList.Text += "Plain Salad" + "/n";
+            }
+            if (chkCoke.Checked == true)
+            {
+                txtOrdersList.Text += "Coke" + "/n";
+            }
+            if (chkSprite.Checked == true)
+            {
+                txtOrdersList.Text += "Sprite" + "/n";
+            }
+            if (chkRootBeer.Checked == true){
+                txtOrdersList.Text += "Root Beer" + "/n";
+            }
+            if (chkTea.Checked == true){
+                txtOrdersList.Text += "Tea" + "/n";
+            }
+            //
+
+        }
+
+        private void checkBox6_CheckedChanged(object sender, EventArgs e)
         {
 
         }
