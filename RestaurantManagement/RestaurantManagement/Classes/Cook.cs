@@ -14,17 +14,17 @@ namespace RestaurantManagement
 
         public void ViewOrders()
         {
-            throw new System.NotImplementedException();
+            
         }
 
         public void DeleteOrders()
         {
-            throw new System.NotImplementedException();
+            
         }
 
         public void OrderStatus()
         {
-            throw new System.NotImplementedException();
+            
         }
     }
 }

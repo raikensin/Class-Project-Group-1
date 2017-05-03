@@ -9,21 +9,17 @@ namespace RestaurantManagement
     {
         private string tableStatus;
 
-        public string TableStatus
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
+        public string TableStatus { get; set; }
 
         public void ChangeTableStatus()
         {
-            throw new System.NotImplementedException();
+            if (EmployeeID == 2)
+            {
+                ChangeTableStatus();
+            }
         }
+
+
+
     }
 }
