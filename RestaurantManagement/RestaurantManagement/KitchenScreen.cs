@@ -21,5 +21,10 @@ namespace RestaurantManagement
         {
 
         }
+
+        private void txtOrder1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
