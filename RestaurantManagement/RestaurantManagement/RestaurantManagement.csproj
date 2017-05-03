@@ -55,12 +55,6 @@
     <Compile Include="Classes\Program.cs" />
     <Compile Include="Classes\Seating.cs" />
     <Compile Include="Classes\Waiter.cs" />
-    <Compile Include="AddEmployees.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddEmployees.Designer.cs">
-      <DependentUpon>AddEmployees.cs</DependentUpon>
-    </Compile>
     <Compile Include="Employees.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,9 +94,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AddEmployees.resx">
-      <DependentUpon>AddEmployees.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Employees.resx">
       <DependentUpon>Employees.cs</DependentUpon>
     </EmbeddedResource>

@@ -29,12 +29,9 @@ namespace RestaurantManagement
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AddEmployees frm = new AddEmployees();
-            
-            frm.Show();
-            this.Hide();
             
             
+          
         }
     }
 }

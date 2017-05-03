@@ -55,5 +55,12 @@ namespace RestaurantManagement
             Login manger = new Login();
             manger.ShowDialog();
         }
+
+        private void btnCook_Click(object sender, EventArgs e)
+        {
+            KitchenScreen manager = new KitchenScreen();
+            manager.ShowDialog();
+
+        }
     }
 }
