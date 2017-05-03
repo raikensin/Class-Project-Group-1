@@ -197,11 +197,11 @@
             // btnEnter
             // 
             this.btnEnter.Location = new System.Drawing.Point(571, 338);
-            this.btnEnter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEnter.Margin = new System.Windows.Forms.Padding(2);
             this.btnEnter.Name = "btnEnter";
             this.btnEnter.Size = new System.Drawing.Size(85, 37);
             this.btnEnter.TabIndex = 15;
-            this.btnEnter.Text = "Enter";
+            this.btnEnter.Text = "Clear";
             this.btnEnter.UseVisualStyleBackColor = true;
             this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
             // 

@@ -37,7 +37,14 @@ namespace RestaurantManagement
 
         private void btnBackLoginForm_Click(object sender, EventArgs e)
         {
-
+            if ((String.Compare(txtBoxLogin.Text, " ") < 0))
+            {
+                txtBoxLogin.Text = txtBoxLogin.Text.Substring(0, txtBoxLogin.Text.Length - 1 + 1);
+            }
+            else
+            {
+                txtBoxLogin.Text = txtBoxLogin.Text.Substring(0, txtBoxLogin.Text.Length - 1);
+            }
         }
 
         private void btn2LoginForm_Click(object sender, EventArgs e)
@@ -88,7 +95,7 @@ namespace RestaurantManagement
 
         private void btnEnter_Click(object sender, EventArgs e)
         {
-
+            txtBoxLogin.Text = String.Empty;
         }
 
         private void btnLoginLoginForm_Click(object sender, EventArgs e)
@@ -100,13 +107,48 @@ namespace RestaurantManagement
 
             DataTable dt = new DataTable(); //this is creating a virtual table  
             sda.Fill(dt);
-            if (dt.Rows[0].Field<int>("ID").ToString() == "123456")
+            //if (dt.Rows[0].Field<int>("ID").ToString() == "")
+            //{
+            //    this.Hide();
+            //    new Manage().Show();
+            //}
+            //else
+            //{
+
+            //    this.Hide();
+            //    new Employees().Show();
+            //}
+
+            try
             {
-                this.Hide();
-                new Manage().Show();
+                if (dt.Rows.Count == 1)
+                {
+                    switch (dt.Rows[0]["Role"] as string)
+                    {
+                        case "Admin":
+                            {
+                                this.Hide();
+                                Manage aMenu = new Manage();
+                                aMenu.Show();
+                                break;
+                            }
+                        case "Employee":
+                            {
+                                this.Hide();
+                                Employees pMenu = new Employees();
+                                pMenu.Show();
+                                break;
+                            }
+
+                    }
+                }
             }
-            else
-                MessageBox.Show("Invalid ID");
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+                //Form.Close();
+            }
+
 
         }
     }
