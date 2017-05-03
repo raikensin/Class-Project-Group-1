@@ -29,8 +29,8 @@ namespace RestaurantManagement
 
         private void button9_Click(object sender, EventArgs e)
         {
-            placeholder ColorChanger = new placeholder;
-            ColorChanger.ShowDialogue();
+            //placeholder ColorChanger = new placeholder;
+            //ColorChanger.ShowDialogue();
         }
     }
 }

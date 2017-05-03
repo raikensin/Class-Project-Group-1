@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Data.SqlClient;
+using System.Data.Sql;
+
 namespace RestaurantManagement
 {
     public partial class Login : Form
@@ -31,8 +34,8 @@ namespace RestaurantManagement
         private void txtBoxLogin_TextChanged(object sender, EventArgs e)
         {
         }
-         
-         private void btnBackLoginForm_Click(object sender, EventArgs e)
+
+        private void btnBackLoginForm_Click(object sender, EventArgs e)
         {
 
         }
@@ -85,8 +88,27 @@ namespace RestaurantManagement
 
         private void btnEnter_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void btnLoginLoginForm_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection("Server=cis1.actx.edu;Database=project1;User Id=db1;Password = db10;");
+
+            connection.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM dbo.Manager WHERE ID=" + txtBoxLogin.Text, connection);
+
+            DataTable dt = new DataTable(); //this is creating a virtual table  
+            sda.Fill(dt);
+            if (dt.Rows[0].Field<int>("ID").ToString() == "123456")
+            {
+                this.Hide();
+                new Manage().Show();
+            }
+            else
+                MessageBox.Show("Invalid ID");
+
         }
     }
-    
 }
+
