@@ -74,6 +74,12 @@
       <DependentUpon>FloorPlan.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\IAdmin.cs" />
+    <Compile Include="KitchenScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitchenScreen.Designer.cs">
+      <DependentUpon>KitchenScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FloorPlan.resx">
       <DependentUpon>FloorPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitchenScreen.resx">
+      <DependentUpon>KitchenScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
