@@ -70,10 +70,11 @@
             this.btnAssignTables.Location = new System.Drawing.Point(659, 154);
             this.btnAssignTables.Margin = new System.Windows.Forms.Padding(2);
             this.btnAssignTables.Name = "btnAssignTables";
-            this.btnAssignTables.Size = new System.Drawing.Size(164, 41);
+            this.btnAssignTables.Size = new System.Drawing.Size(164, 48);
             this.btnAssignTables.TabIndex = 1;
             this.btnAssignTables.Text = "Assign Tables";
             this.btnAssignTables.UseVisualStyleBackColor = true;
+            this.btnAssignTables.Click += new System.EventHandler(this.btnAssignTables_Click);
             // 
             // btnAddEmployee
             // 
@@ -94,6 +95,7 @@
             this.btnmenu.TabIndex = 4;
             this.btnmenu.Text = "Menu";
             this.btnmenu.UseVisualStyleBackColor = true;
+            this.btnmenu.Click += new System.EventHandler(this.btnmenu_Click);
             // 
             // btnLogOut
             // 
@@ -104,6 +106,7 @@
             this.btnLogOut.TabIndex = 5;
             this.btnLogOut.Text = "Logout";
             this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // pictureBox1
             // 

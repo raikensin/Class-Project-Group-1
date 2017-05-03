@@ -6,13 +6,12 @@ using System.Text;
 namespace RestaurantManagement
 {
     public class ManagerForm : Employee, IAdmin
-    // the manager needs to be able to lo ginto the IAdmin
-    // forms straight from the initial log in screen
+    // When the manager logs in it will bring up the admin page
+    // from here the manager will have the option to loin to the other forms
 
     // from there the mangager should have the option to pull reports for the last
     // day  week month or year from the data base
-    // The manager  could also have the option to add or remove users
-    // and change which waiters are assigned to what tables  
+
 
    
 
@@ -33,10 +32,7 @@ namespace RestaurantManagement
 
         public void DeleteOrders()
         {
-            if (EmployeeID == 4)
-            {
-                DeleteOrders();
-            }
+            
         }
 
         public void OrderStatus()
@@ -51,10 +47,7 @@ namespace RestaurantManagement
 
         public void ChangeTableStatus()
         {
-            if(EmployeeID == 4)
-            {
-                ChangeTableStatus();
-            }
+         
         }
     }
 }

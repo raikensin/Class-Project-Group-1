@@ -37,5 +37,23 @@ namespace RestaurantManagement
         {
 
         }
+
+        private void btnmenu_Click(object sender, EventArgs e)
+        {
+            Menu manager = new Menu();
+            manager.ShowDialog();
+        }
+
+        private void btnAssignTables_Click(object sender, EventArgs e)
+        {
+            FloorPlan manager = new FloorPlan();
+            manager.ShowDialog();
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            Login manger = new Login();
+            manger.ShowDialog();
+        }
     }
 }
