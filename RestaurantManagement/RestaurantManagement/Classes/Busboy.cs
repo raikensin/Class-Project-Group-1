@@ -13,7 +13,13 @@ namespace RestaurantManagement
 
         public void ChangeTableStatus()
         {
-            throw new System.NotImplementedException();
+            if (EmployeeID == 2)
+            {
+                ChangeTableStatus();
+            }
         }
+
+
+
     }
 }
