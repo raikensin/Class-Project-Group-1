@@ -56,10 +56,10 @@
             // 
             // btnEmployees
             // 
-            this.btnEmployees.Location = new System.Drawing.Point(659, 90);
+            this.btnEmployees.Location = new System.Drawing.Point(659, 101);
             this.btnEmployees.Margin = new System.Windows.Forms.Padding(2);
             this.btnEmployees.Name = "btnEmployees";
-            this.btnEmployees.Size = new System.Drawing.Size(164, 43);
+            this.btnEmployees.Size = new System.Drawing.Size(164, 58);
             this.btnEmployees.TabIndex = 0;
             this.btnEmployees.Text = "Employees";
             this.btnEmployees.UseVisualStyleBackColor = true;
@@ -67,10 +67,10 @@
             // 
             // btnAssignTables
             // 
-            this.btnAssignTables.Location = new System.Drawing.Point(659, 154);
+            this.btnAssignTables.Location = new System.Drawing.Point(659, 163);
             this.btnAssignTables.Margin = new System.Windows.Forms.Padding(2);
             this.btnAssignTables.Name = "btnAssignTables";
-            this.btnAssignTables.Size = new System.Drawing.Size(164, 48);
+            this.btnAssignTables.Size = new System.Drawing.Size(164, 58);
             this.btnAssignTables.TabIndex = 1;
             this.btnAssignTables.Text = "Assign Tables";
             this.btnAssignTables.UseVisualStyleBackColor = true;
@@ -78,10 +78,10 @@
             // 
             // btnAddEmployee
             // 
-            this.btnAddEmployee.Location = new System.Drawing.Point(659, 34);
+            this.btnAddEmployee.Location = new System.Drawing.Point(659, 39);
             this.btnAddEmployee.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddEmployee.Name = "btnAddEmployee";
-            this.btnAddEmployee.Size = new System.Drawing.Size(164, 43);
+            this.btnAddEmployee.Size = new System.Drawing.Size(164, 58);
             this.btnAddEmployee.TabIndex = 3;
             this.btnAddEmployee.Text = "Add Employee";
             this.btnAddEmployee.UseVisualStyleBackColor = true;
@@ -99,10 +99,10 @@
             // 
             // btnLogOut
             // 
-            this.btnLogOut.Location = new System.Drawing.Point(659, 221);
+            this.btnLogOut.Location = new System.Drawing.Point(659, 225);
             this.btnLogOut.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(164, 41);
+            this.btnLogOut.Size = new System.Drawing.Size(164, 58);
             this.btnLogOut.TabIndex = 5;
             this.btnLogOut.Text = "Logout";
             this.btnLogOut.UseVisualStyleBackColor = true;
@@ -256,7 +256,7 @@
             // 
             // btnCook
             // 
-            this.btnCook.Location = new System.Drawing.Point(518, 337);
+            this.btnCook.Location = new System.Drawing.Point(523, 337);
             this.btnCook.Name = "btnCook";
             this.btnCook.Size = new System.Drawing.Size(147, 50);
             this.btnCook.TabIndex = 21;

@@ -14,8 +14,6 @@ namespace RestaurantManagement
 
 
    
-
-
     {
 
         private string tableStatus;
