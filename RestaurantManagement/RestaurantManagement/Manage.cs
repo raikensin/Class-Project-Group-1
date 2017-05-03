@@ -62,5 +62,11 @@ namespace RestaurantManagement
             manager.ShowDialog();
 
         }
+
+        private void btnAddEmployee_Click(object sender, EventArgs e)
+        {
+            
+        }
+
     }
 }
