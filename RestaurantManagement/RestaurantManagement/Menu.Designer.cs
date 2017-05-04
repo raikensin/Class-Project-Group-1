@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.chkPickles = new System.Windows.Forms.CheckBox();
+            this.chkLettuce = new System.Windows.Forms.CheckBox();
+            this.chkOnions = new System.Windows.Forms.CheckBox();
+            this.chkTomato = new System.Windows.Forms.CheckBox();
+            this.chkDoublePatty = new System.Windows.Forms.CheckBox();
             this.chkHamburger = new System.Windows.Forms.CheckBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
@@ -55,11 +60,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.btnAddOrder = new System.Windows.Forms.Button();
-            this.chkDoublePatty = new System.Windows.Forms.CheckBox();
-            this.chkTomato = new System.Windows.Forms.CheckBox();
-            this.chkOnions = new System.Windows.Forms.CheckBox();
-            this.chkLettuce = new System.Windows.Forms.CheckBox();
-            this.chkPickles = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -74,19 +74,69 @@
             this.groupBox1.Controls.Add(this.chkDoublePatty);
             this.groupBox1.Controls.Add(this.chkHamburger);
             this.groupBox1.Location = new System.Drawing.Point(325, 35);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(195, 219);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Hamburgers";
             // 
+            // chkPickles
+            // 
+            this.chkPickles.AutoSize = true;
+            this.chkPickles.Location = new System.Drawing.Point(14, 154);
+            this.chkPickles.Name = "chkPickles";
+            this.chkPickles.Size = new System.Drawing.Size(85, 17);
+            this.chkPickles.TabIndex = 10;
+            this.chkPickles.Text = "Pickle $1.99";
+            this.chkPickles.UseVisualStyleBackColor = true;
+            // 
+            // chkLettuce
+            // 
+            this.chkLettuce.AutoSize = true;
+            this.chkLettuce.Location = new System.Drawing.Point(14, 131);
+            this.chkLettuce.Name = "chkLettuce";
+            this.chkLettuce.Size = new System.Drawing.Size(92, 17);
+            this.chkLettuce.TabIndex = 9;
+            this.chkLettuce.Text = "Lettuce $1.99";
+            this.chkLettuce.UseVisualStyleBackColor = true;
+            // 
+            // chkOnions
+            // 
+            this.chkOnions.AutoSize = true;
+            this.chkOnions.Location = new System.Drawing.Point(15, 108);
+            this.chkOnions.Name = "chkOnions";
+            this.chkOnions.Size = new System.Drawing.Size(89, 17);
+            this.chkOnions.TabIndex = 8;
+            this.chkOnions.Text = "Onions $1.99";
+            this.chkOnions.UseVisualStyleBackColor = true;
+            // 
+            // chkTomato
+            // 
+            this.chkTomato.AutoSize = true;
+            this.chkTomato.Location = new System.Drawing.Point(15, 85);
+            this.chkTomato.Name = "chkTomato";
+            this.chkTomato.Size = new System.Drawing.Size(92, 17);
+            this.chkTomato.TabIndex = 7;
+            this.chkTomato.Text = "Tomato $1.99";
+            this.chkTomato.UseVisualStyleBackColor = true;
+            // 
+            // chkDoublePatty
+            // 
+            this.chkDoublePatty.AutoSize = true;
+            this.chkDoublePatty.Location = new System.Drawing.Point(15, 63);
+            this.chkDoublePatty.Name = "chkDoublePatty";
+            this.chkDoublePatty.Size = new System.Drawing.Size(117, 17);
+            this.chkDoublePatty.TabIndex = 6;
+            this.chkDoublePatty.Text = "Double Patty $6.99";
+            this.chkDoublePatty.UseVisualStyleBackColor = true;
+            // 
             // chkHamburger
             // 
             this.chkHamburger.AutoSize = true;
             this.chkHamburger.Location = new System.Drawing.Point(15, 37);
-            this.chkHamburger.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chkHamburger.Margin = new System.Windows.Forms.Padding(2);
             this.chkHamburger.Name = "chkHamburger";
             this.chkHamburger.Size = new System.Drawing.Size(114, 17);
             this.chkHamburger.TabIndex = 0;
@@ -100,9 +150,9 @@
             this.groupBox2.Controls.Add(this.chkGardenSalad);
             this.groupBox2.Controls.Add(this.chkHouseSalad);
             this.groupBox2.Location = new System.Drawing.Point(524, 35);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(180, 219);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
@@ -113,7 +163,7 @@
             // 
             this.chkPlainSalad.AutoSize = true;
             this.chkPlainSalad.Location = new System.Drawing.Point(16, 132);
-            this.chkPlainSalad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chkPlainSalad.Margin = new System.Windows.Forms.Padding(2);
             this.chkPlainSalad.Name = "chkPlainSalad";
             this.chkPlainSalad.Size = new System.Drawing.Size(109, 17);
             this.chkPlainSalad.TabIndex = 3;
@@ -124,7 +174,7 @@
             // 
             this.chkFruitSalad.AutoSize = true;
             this.chkFruitSalad.Location = new System.Drawing.Point(16, 102);
-            this.chkFruitSalad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chkFruitSalad.Margin = new System.Windows.Forms.Padding(2);
             this.chkFruitSalad.Name = "chkFruitSalad";
             this.chkFruitSalad.Size = new System.Drawing.Size(106, 17);
             this.chkFruitSalad.TabIndex = 2;
@@ -135,7 +185,7 @@
             // 
             this.chkGardenSalad.AutoSize = true;
             this.chkGardenSalad.Location = new System.Drawing.Point(16, 66);
-            this.chkGardenSalad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chkGardenSalad.Margin = new System.Windows.Forms.Padding(2);
             this.chkGardenSalad.Name = "chkGardenSalad";
             this.chkGardenSalad.Size = new System.Drawing.Size(121, 17);
             this.chkGardenSalad.TabIndex = 1;
@@ -147,7 +197,7 @@
             // 
             this.chkHouseSalad.AutoSize = true;
             this.chkHouseSalad.Location = new System.Drawing.Point(16, 37);
-            this.chkHouseSalad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chkHouseSalad.Margin = new System.Windows.Forms.Padding(2);
             this.chkHouseSalad.Name = "chkHouseSalad";
             this.chkHouseSalad.Size = new System.Drawing.Size(117, 17);
             this.chkHouseSalad.TabIndex = 1;
@@ -161,9 +211,9 @@
             this.groupBox3.Controls.Add(this.chkCoke);
             this.groupBox3.Controls.Add(this.chkRootBeer);
             this.groupBox3.Location = new System.Drawing.Point(709, 35);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(150, 219);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
@@ -173,7 +223,7 @@
             // 
             this.chkTea.AutoSize = true;
             this.chkTea.Location = new System.Drawing.Point(20, 121);
-            this.chkTea.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chkTea.Margin = new System.Windows.Forms.Padding(2);
             this.chkTea.Name = "chkTea";
             this.chkTea.Size = new System.Drawing.Size(75, 17);
             this.chkTea.TabIndex = 4;
@@ -185,7 +235,7 @@
             // 
             this.chkSprite.AutoSize = true;
             this.chkSprite.Location = new System.Drawing.Point(20, 58);
-            this.chkSprite.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chkSprite.Margin = new System.Windows.Forms.Padding(2);
             this.chkSprite.Name = "chkSprite";
             this.chkSprite.Size = new System.Drawing.Size(83, 17);
             this.chkSprite.TabIndex = 5;
@@ -196,7 +246,7 @@
             // 
             this.chkCoke.AutoSize = true;
             this.chkCoke.Location = new System.Drawing.Point(20, 28);
-            this.chkCoke.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chkCoke.Margin = new System.Windows.Forms.Padding(2);
             this.chkCoke.Name = "chkCoke";
             this.chkCoke.Size = new System.Drawing.Size(81, 17);
             this.chkCoke.TabIndex = 6;
@@ -207,7 +257,7 @@
             // 
             this.chkRootBeer.AutoSize = true;
             this.chkRootBeer.Location = new System.Drawing.Point(20, 89);
-            this.chkRootBeer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chkRootBeer.Margin = new System.Windows.Forms.Padding(2);
             this.chkRootBeer.Name = "chkRootBeer";
             this.chkRootBeer.Size = new System.Drawing.Size(104, 17);
             this.chkRootBeer.TabIndex = 7;
@@ -227,7 +277,7 @@
             // txtOrdersList
             // 
             this.txtOrdersList.Location = new System.Drawing.Point(20, 35);
-            this.txtOrdersList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtOrdersList.Margin = new System.Windows.Forms.Padding(2);
             this.txtOrdersList.Multiline = true;
             this.txtOrdersList.Name = "txtOrdersList";
             this.txtOrdersList.Size = new System.Drawing.Size(265, 289);
@@ -236,7 +286,7 @@
             // txtTotal
             // 
             this.txtTotal.Location = new System.Drawing.Point(170, 328);
-            this.txtTotal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTotal.Margin = new System.Windows.Forms.Padding(2);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(96, 20);
             this.txtTotal.TabIndex = 4;
@@ -245,7 +295,7 @@
             // txtTax
             // 
             this.txtTax.Location = new System.Drawing.Point(170, 358);
-            this.txtTax.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTax.Margin = new System.Windows.Forms.Padding(2);
             this.txtTax.Name = "txtTax";
             this.txtTax.Size = new System.Drawing.Size(96, 20);
             this.txtTax.TabIndex = 5;
@@ -253,7 +303,7 @@
             // txtSubtotal
             // 
             this.txtSubtotal.Location = new System.Drawing.Point(170, 388);
-            this.txtSubtotal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSubtotal.Margin = new System.Windows.Forms.Padding(2);
             this.txtSubtotal.Name = "txtSubtotal";
             this.txtSubtotal.Size = new System.Drawing.Size(96, 20);
             this.txtSubtotal.TabIndex = 6;
@@ -291,7 +341,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(26, 506);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(114, 37);
             this.button1.TabIndex = 10;
@@ -301,7 +351,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(745, 514);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(114, 37);
             this.button2.TabIndex = 11;
@@ -312,7 +362,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(170, 506);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(114, 37);
             this.button3.TabIndex = 12;
@@ -323,7 +373,7 @@
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(590, 514);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(114, 37);
             this.button4.TabIndex = 13;
@@ -339,56 +389,6 @@
             this.btnAddOrder.Text = "Add Order";
             this.btnAddOrder.UseVisualStyleBackColor = true;
             this.btnAddOrder.Click += new System.EventHandler(this.btnAddOrder_Click);
-            // 
-            // chkDoublePatty
-            // 
-            this.chkDoublePatty.AutoSize = true;
-            this.chkDoublePatty.Location = new System.Drawing.Point(15, 63);
-            this.chkDoublePatty.Name = "chkDoublePatty";
-            this.chkDoublePatty.Size = new System.Drawing.Size(117, 17);
-            this.chkDoublePatty.TabIndex = 6;
-            this.chkDoublePatty.Text = "Double Patty $6.99";
-            this.chkDoublePatty.UseVisualStyleBackColor = true;
-            // 
-            // chkTomato
-            // 
-            this.chkTomato.AutoSize = true;
-            this.chkTomato.Location = new System.Drawing.Point(15, 85);
-            this.chkTomato.Name = "chkTomato";
-            this.chkTomato.Size = new System.Drawing.Size(92, 17);
-            this.chkTomato.TabIndex = 7;
-            this.chkTomato.Text = "Tomato $1.99";
-            this.chkTomato.UseVisualStyleBackColor = true;
-            // 
-            // chkOnions
-            // 
-            this.chkOnions.AutoSize = true;
-            this.chkOnions.Location = new System.Drawing.Point(15, 108);
-            this.chkOnions.Name = "chkOnions";
-            this.chkOnions.Size = new System.Drawing.Size(89, 17);
-            this.chkOnions.TabIndex = 8;
-            this.chkOnions.Text = "Onions $1.99";
-            this.chkOnions.UseVisualStyleBackColor = true;
-            // 
-            // chkLettuce
-            // 
-            this.chkLettuce.AutoSize = true;
-            this.chkLettuce.Location = new System.Drawing.Point(14, 131);
-            this.chkLettuce.Name = "chkLettuce";
-            this.chkLettuce.Size = new System.Drawing.Size(92, 17);
-            this.chkLettuce.TabIndex = 9;
-            this.chkLettuce.Text = "Lettuce $1.99";
-            this.chkLettuce.UseVisualStyleBackColor = true;
-            // 
-            // chkPickles
-            // 
-            this.chkPickles.AutoSize = true;
-            this.chkPickles.Location = new System.Drawing.Point(14, 154);
-            this.chkPickles.Name = "chkPickles";
-            this.chkPickles.Size = new System.Drawing.Size(85, 17);
-            this.chkPickles.TabIndex = 10;
-            this.chkPickles.Text = "Pickle $1.99";
-            this.chkPickles.UseVisualStyleBackColor = true;
             // 
             // Menu
             // 
@@ -411,7 +411,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Menu";
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu_Load);

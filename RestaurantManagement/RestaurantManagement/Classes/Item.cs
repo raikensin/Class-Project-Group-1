@@ -21,77 +21,72 @@ namespace RestaurantManagement
         private string sprite = " Sprite ";
         private string rootbeer = " Root Beer ";
         private string tea = " Tea ";
-        private int quantity;
+        public static int quantity;
+        public static int c = 0;
         public double runningTotal = 0D;
+        public static double Tax = .0825;
 
-        public double Hamburgerprice()
+        public static double Hamburgerprice()
         {
             return 15.75;
         }
-        public double doublepattyprice()
+        public static double doublepattyprice()
         {
             return 6.99;
         }
-        public double tomatoprice()
+        public static double tomatoprice()
         {
             return 1.99;
         }
-        public double onionprice()
+        public static double onionprice()
         {
             return 1.99;
         }
-        public double lettuceprice()
+        public static double lettuceprice()
         {
             return 1.99;
         }
-        public double pickleprice()
+        public static double pickleprice()
         {
             return 1.99;
         }
-        public double housesaladprice()
+        public static double housesaladprice()
         {
             return 5.99;
         }
-        public double gardensaladprice()
+        public static double gardensaladprice()
         {
             return 9.99;
         }
-        public double fruitsaladprice()
+        public static double fruitsaladprice()
         {
             return 6.99;
         }
-        public double plainsaladprice()
+        public static double plainsaladprice()
         {
             return 2.99;
         }
-        public double cokeprice()
+        public static double cokeprice()
         {
             return 2.99;
         }
-        public double spriteprice()
+        public static double spriteprice()
         {
             return 2.99;
         }
-        public double rootbeerprice()
+        public static double rootbeerprice()
         {
             return 2.99;
         }
-        public double teaprice()
+        public static double teaprice()
         {
             return 1.99;
         }
         
 
-        public int Quantity
+        public static int GetQuantity(int x)
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
+            return quantity += x; 
         }
 
         public void GetInventory()
