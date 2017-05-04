@@ -254,6 +254,7 @@
             this.btnHostBusBoy.TabIndex = 20;
             this.btnHostBusBoy.Text = "Host and Bus";
             this.btnHostBusBoy.UseVisualStyleBackColor = true;
+            this.btnHostBusBoy.Click += new System.EventHandler(this.btnHostBusBoy_Click);
             // 
             // btnCook
             // 
