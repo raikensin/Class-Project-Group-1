@@ -107,47 +107,47 @@ namespace RestaurantManagement
 
             DataTable dt = new DataTable(); //this is creating a virtual table  
             sda.Fill(dt);
-            //if (dt.Rows[0].Field<int>("ID").ToString() == "")
-            //{
-            //    this.Hide();
-            //    new Manage().Show();
-            //}
-            //else
-            //{
-
-            //    this.Hide();
-            //    new Employees().Show();
-            //}
-
-            try
+            if (dt.Rows[0].Field<int>("ID").ToString() == "123456")
             {
-                if (dt.Rows.Count == 1)
-                {
-                    switch (dt.Rows[0]["Role"] as string)
-                    {
-                        case "Admin":
-                            {
-                                this.Hide();
-                                Manage aMenu = new Manage();
-                                aMenu.Show();
-                                break;
-                            }
-                        case "Employee":
-                            {
-                                this.Hide();
-                                Employees pMenu = new Employees();
-                                pMenu.Show();
-                                break;
-                            }
-
-                    }
-                }
+                this.Hide();
+                new Manage().Show();
             }
-            catch (SqlException ex)
+            else
             {
-                MessageBox.Show(ex.Message);
-                //Form.Close();
+
+                this.Hide();
+                new Employees().Show();
             }
+
+            //try
+            //{
+            //    if (dt.Rows.Count == 1)
+            //    {
+            //        switch (dt.Rows[0]["Role"] as string)
+            //        {
+            //            case "Admin":
+            //                {
+            //                    this.Hide();
+            //                    Manage aMenu = new Manage();
+            //                    aMenu.Show();
+            //                    break;
+            //                }
+            //            case "Employee":
+            //                {
+            //                    this.Hide();
+            //                    Employees pMenu = new Employees();
+            //                    pMenu.Show();
+            //                    break;
+            //                }
+
+            //        }
+            //    }
+            //}
+            //catch (SqlException ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //    //Form.Close();
+            //}
 
 
         }
