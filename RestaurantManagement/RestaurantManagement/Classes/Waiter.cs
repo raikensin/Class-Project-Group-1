@@ -7,19 +7,12 @@ namespace RestaurantManagement
 {
     public class Waiter : Employee
     {
-        private string orders;
+        public static string orders="";
         private bool tablesAvailble;
 
-        public string Orders
+        public string GetOrders()
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
+           return orders+=orders + "\r\n";
         }
 
         public bool TablesAvailble

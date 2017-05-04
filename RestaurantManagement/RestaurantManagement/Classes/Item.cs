@@ -7,20 +7,20 @@ namespace RestaurantManagement
 {
     public class Item : Menu
     {
-        private string hamburger = " Hamburger ";
-        private string doublepatty= " Double Patty ";
-        private string tomato= " Tomato ";
-        private string onions= " Onions ";
-        private string letttuce= " Lettuce ";
-        private string pickle = " Pickle ";
-        private string housesalad = " House Salad ";
-        private string gardensalad = " Garden Salad ";
-        private string fruitsalad = " Fruit Salad ";
-        private string plainsalad = " Plain Salad ";
-        private string coke = " Coke ";
-        private string sprite = " Sprite ";
-        private string rootbeer = " Root Beer ";
-        private string tea = " Tea ";
+        public static string hamburger = " Hamburger ";
+        public static string doublepatty= " Double Patty ";
+        public static string tomato= " Tomato ";
+        public static string onions= " Onions ";
+        public static string letttuce= " Lettuce ";
+        public static string pickle = " Pickle ";
+        public static string housesalad = " House Salad ";
+        public static string gardensalad = " Garden Salad ";
+        public static string fruitsalad = " Fruit Salad ";
+        public static string plainsalad = " Plain Salad ";
+        public static string coke = " Coke ";
+        public static string sprite = " Sprite ";
+        public static string rootbeer = " Root Beer ";
+        public static string tea = " Tea ";
         public static int quantity;
         public static int c = 0;
         public static double runningTotal = 0D;
