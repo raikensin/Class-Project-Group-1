@@ -7,91 +7,86 @@ namespace RestaurantManagement
 {
     public class Item : Menu
     {
-        private string hamburger = " Hamburger ";
-        private string doublepatty= " Double Patty ";
-        private string tomato= " Tomato ";
-        private string onions= " Onions ";
-        private string letttuce= " Lettuce ";
-        private string pickle = " Pickle ";
-        private string housesalad = " House Salad ";
-        private string gardensalad = " Garden Salad ";
-        private string fruitsalad = " Fruit Salad ";
-        private string plainsalad = " Plain Salad ";
-        private string coke = " Coke ";
-        private string sprite = " Sprite ";
-        private string rootbeer = " Root Beer ";
-        private string tea = " Tea ";
-        private int quantity;
-        public double runningTotal = 0D;
+        public static string hamburger = " Hamburger ";
+        public static string doublepatty= " Double Patty ";
+        public static string tomato= " Tomato ";
+        public static string onions= " Onions ";
+        public static string letttuce= " Lettuce ";
+        public static string pickle = " Pickle ";
+        public static string housesalad = " House Salad ";
+        public static string gardensalad = " Garden Salad ";
+        public static string fruitsalad = " Fruit Salad ";
+        public static string plainsalad = " Plain Salad ";
+        public static string coke = " Coke ";
+        public static string sprite = " Sprite ";
+        public static string rootbeer = " Root Beer ";
+        public static string tea = " Tea ";
+        public static int quantity;
+        public static int c = 0;
+        public static double runningTotal = 0D;
+        public static double Tax = .0825;
 
-        public double Hamburgerprice()
+        public static double Hamburgerprice()
         {
             return 15.75;
         }
-        public double doublepattyprice()
+        public static double doublepattyprice()
         {
             return 6.99;
         }
-        public double tomatoprice()
+        public static double tomatoprice()
         {
             return 1.99;
         }
-        public double onionprice()
+        public static double onionprice()
         {
             return 1.99;
         }
-        public double lettuceprice()
+        public static double lettuceprice()
         {
             return 1.99;
         }
-        public double pickleprice()
+        public static double pickleprice()
         {
             return 1.99;
         }
-        public double housesaladprice()
+        public static double housesaladprice()
         {
             return 5.99;
         }
-        public double gardensaladprice()
+        public static double gardensaladprice()
         {
             return 9.99;
         }
-        public double fruitsaladprice()
+        public static double fruitsaladprice()
         {
             return 6.99;
         }
-        public double plainsaladprice()
+        public static double plainsaladprice()
         {
             return 2.99;
         }
-        public double cokeprice()
+        public static double cokeprice()
         {
             return 2.99;
         }
-        public double spriteprice()
+        public static double spriteprice()
         {
             return 2.99;
         }
-        public double rootbeerprice()
+        public static double rootbeerprice()
         {
             return 2.99;
         }
-        public double teaprice()
+        public static double teaprice()
         {
             return 1.99;
         }
         
 
-        public int Quantity
+        public static int GetQuantity(int x)
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
+            return quantity += x; 
         }
 
         public void GetInventory()

@@ -56,6 +56,12 @@
     <Compile Include="Classes\Manager.cs" />
     <Compile Include="Classes\Seating.cs" />
     <Compile Include="Classes\Waiter.cs" />
+    <Compile Include="ColorChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColorChange.Designer.cs">
+      <DependentUpon>ColorChange.cs</DependentUpon>
+    </Compile>
     <Compile Include="Employees.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     <Compile Include="Orders.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ColorChange.resx">
+      <DependentUpon>ColorChange.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Employees.resx">
       <DependentUpon>Employees.cs</DependentUpon>
     </EmbeddedResource>
