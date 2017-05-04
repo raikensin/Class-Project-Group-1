@@ -23,7 +23,7 @@ namespace RestaurantManagement
         private string tea = " Tea ";
         public static int quantity;
         public static int c = 0;
-        public double runningTotal = 0D;
+        public static double runningTotal = 0D;
         public static double Tax = .0825;
 
         public static double Hamburgerprice()

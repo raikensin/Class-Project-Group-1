@@ -50,17 +50,16 @@ namespace RestaurantManagement
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            //Send to the database so cook can recieve it 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void btnAddOrder_Click(object sender, EventArgs e)
         {
-            double Total=0D;
             Item.c++;
             txtOrdersList.Text += "----Order" + Item.c + " ----- \r\n";
              if(chkHamburger.Checked == true)
@@ -68,89 +67,89 @@ namespace RestaurantManagement
                 //if the hamburger check box is checked add to the txtbox order list.
                 txtOrdersList.Text += "Hamburger" + "\r\n";
                 //get the total from item class
-                Total+=Item.Hamburgerprice();
+                Item.runningTotal += Item.Hamburgerprice();
                 // get the total for that item
                 Item.GetQuantity(1);
             }
             if (chkDoublePatty.Checked == true)
             {
                 txtOrdersList.Text += "Double Patty" + "\r\n";
-                Total += Item.doublepattyprice();
+                Item.runningTotal += Item.doublepattyprice();
                 Item.GetQuantity(1);
             }
             if (chkTomato.Checked == true)
             {
-                txtOrdersList.Text = "Tomato" + "\r\n";
-                Total += Item.tomatoprice();
+                txtOrdersList.Text += "Tomato" + "\r\n";
+                Item.runningTotal += Item.tomatoprice();
                 Item.GetQuantity(1);
             }
             if (chkOnions.Checked == true)
             {
                 txtOrdersList.Text += "Onions" + "\r\n";
-                Total += Item.onionprice();
+                Item.runningTotal += Item.onionprice();
                 Item.GetQuantity(1);
             }
             if (chkLettuce.Checked == true)
             {
                 txtOrdersList.Text += "Lettuce" + "\r\n";
-                Total += Item.lettuceprice();
+                Item.runningTotal += Item.lettuceprice();
                 Item.GetQuantity(1);
             }
             if (chkPickles.Checked == true)
             {
                 txtOrdersList.Text += "Pickles" + "\r\n";
-                Total += Item.pickleprice();
+                Item.runningTotal += Item.pickleprice();
                 Item.GetQuantity(1);
             }
             if (chkHouseSalad.Checked == true)
             {
                 txtOrdersList.Text += "House Salad" + "\r\n";
-                Total += Item.housesaladprice();
+                Item.runningTotal += Item.housesaladprice();
                 Item.GetQuantity(1);
             }
             if (chkGardenSalad.Checked == true)
             {
                 txtOrdersList.Text += "Garden Salad" + "\r\n";
-                Total += Item.gardensaladprice();
+                Item.runningTotal += Item.gardensaladprice();
                 Item.GetQuantity(1);
             }
             if (chkFruitSalad.Checked == true)
             {
                 txtOrdersList.Text += "Fruit Salad" + "\r\n";
-                Total += Item.fruitsaladprice();
+                Item.runningTotal += Item.fruitsaladprice();
             }
             if (chkPlainSalad.Checked == true)
             {
                 txtOrdersList.Text += "Plain Salad" + "\r\n";
-                Total += Item.plainsaladprice();
+                Item.runningTotal += Item.plainsaladprice();
                 Item.GetQuantity(1);
             }
             if (chkCoke.Checked == true)
             {
                 txtOrdersList.Text += "Coke" + "\r\n";
-                Total += Item.cokeprice();
+                Item.runningTotal += Item.cokeprice();
                 Item.GetQuantity(1);
             }
             if (chkSprite.Checked == true)
             {
                 txtOrdersList.Text += "Sprite" + "\r\n";
-                Total += Item.spriteprice();
+                Item.runningTotal += Item.spriteprice();
                 Item.GetQuantity(1);
             }
             if (chkRootBeer.Checked == true){
                 txtOrdersList.Text += "Root Beer" + "\r\n";
-                Total += Item.rootbeerprice();
+                Item.runningTotal += Item.rootbeerprice();
                 Item.GetQuantity(1);
             }
             if (chkTea.Checked == true){
                 txtOrdersList.Text += "Tea" + "\r\n";
-                Total += Item.teaprice();
+                Item.runningTotal += Item.teaprice();
                 Item.GetQuantity(1);
             }
             //
-            txtTotal.Text = Total.ToString();
-            txtTax.Text=(Total * Item.Tax).ToString();
-            txtSubtotal.Text = (Total + (Total * Item.Tax)).ToString();
+            txtTotal.Text = Item.runningTotal.ToString();
+            txtTax.Text=(Item.runningTotal * Item.Tax).ToString();
+            txtSubtotal.Text = (Item.runningTotal + (Item.runningTotal * Item.Tax)).ToString();
             txtOrdersList.Text += "----------------------" + "\r\n";
         }
 
