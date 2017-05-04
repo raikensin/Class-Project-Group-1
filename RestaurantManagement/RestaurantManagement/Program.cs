@@ -19,6 +19,7 @@ namespace RestaurantManagement
             //Application.Run(new MenuForm());
             Application.Run(new Menu());
             //Application.Run(new Login());
+            //Application.Run(new FloorPlan());
         }
     }
 }
