@@ -18,7 +18,7 @@ namespace RestaurantManagement
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new MenuForm());
             //Application.Run(new Menu());
-            Application.Run(new Login());
+            Application.Run(new KitchenScreen());
         }
     }
 }

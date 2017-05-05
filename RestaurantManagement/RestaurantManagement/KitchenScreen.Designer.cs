@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.bntComplete = new System.Windows.Forms.Button();
-            this.bntDelete = new System.Windows.Forms.Button();
             this.txtOrder1 = new System.Windows.Forms.TextBox();
             this.lblKitchen = new System.Windows.Forms.Label();
+            this.btnRead = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bntComplete
@@ -42,15 +42,7 @@
             this.bntComplete.TabIndex = 0;
             this.bntComplete.Text = "Complete";
             this.bntComplete.UseVisualStyleBackColor = true;
-            // 
-            // bntDelete
-            // 
-            this.bntDelete.Location = new System.Drawing.Point(367, 389);
-            this.bntDelete.Name = "bntDelete";
-            this.bntDelete.Size = new System.Drawing.Size(123, 43);
-            this.bntDelete.TabIndex = 1;
-            this.bntDelete.Text = "Delete";
-            this.bntDelete.UseVisualStyleBackColor = true;
+            this.bntComplete.Click += new System.EventHandler(this.bntComplete_Click);
             // 
             // txtOrder1
             // 
@@ -72,14 +64,24 @@
             this.lblKitchen.Text = "Kitcken";
             this.lblKitchen.Click += new System.EventHandler(this.label1_Click);
             // 
+            // btnRead
+            // 
+            this.btnRead.Location = new System.Drawing.Point(111, 400);
+            this.btnRead.Name = "btnRead";
+            this.btnRead.Size = new System.Drawing.Size(75, 23);
+            this.btnRead.TabIndex = 5;
+            this.btnRead.Text = "Read";
+            this.btnRead.UseVisualStyleBackColor = true;
+            this.btnRead.Click += new System.EventHandler(this.btnRead_Click);
+            // 
             // KitchenScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(719, 442);
+            this.Controls.Add(this.btnRead);
             this.Controls.Add(this.lblKitchen);
             this.Controls.Add(this.txtOrder1);
-            this.Controls.Add(this.bntDelete);
             this.Controls.Add(this.bntComplete);
             this.Name = "KitchenScreen";
             this.Text = "KitchenScreen";
@@ -91,8 +93,8 @@
         #endregion
 
         private System.Windows.Forms.Button bntComplete;
-        private System.Windows.Forms.Button bntDelete;
         private System.Windows.Forms.TextBox txtOrder1;
         private System.Windows.Forms.Label lblKitchen;
+        private System.Windows.Forms.Button btnRead;
     }
 }
