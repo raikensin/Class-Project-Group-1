@@ -311,11 +311,12 @@ namespace RestaurantManagement
                             Item.runningTotal += Item.teaprice();
                             Item.GetQuantity(1);
                         }
-                        //
+                       
                         txtTotal.Text = Item.runningTotal.ToString();
                         txtTax.Text = (Item.runningTotal * Item.Tax).ToString();
                         txtSubtotal.Text = (Item.runningTotal + (Item.runningTotal * Item.Tax)).ToString();
                         txtOrdersList.Text += "----------------------" + "\r\n";
+
 
                         // One time use to run item inventory to database    
                         //Send to the database so cook can recieve it
@@ -467,6 +468,11 @@ namespace RestaurantManagement
         }
 
         private void chkTomato_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtOrdersList_TextChanged(object sender, EventArgs e)
         {
 
         }

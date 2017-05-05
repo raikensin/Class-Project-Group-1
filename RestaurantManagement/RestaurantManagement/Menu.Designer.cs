@@ -314,6 +314,7 @@
             this.txtOrdersList.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtOrdersList.Size = new System.Drawing.Size(265, 289);
             this.txtOrdersList.TabIndex = 3;
+            this.txtOrdersList.TextChanged += new System.EventHandler(this.txtOrdersList_TextChanged);
             // 
             // txtTotal
             // 

@@ -35,11 +35,12 @@
             this.txtOrderNum = new System.Windows.Forms.TextBox();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.lalOrderNumber = new System.Windows.Forms.Label();
+            this.btnCookLogout = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bntComplete
             // 
-            this.bntComplete.Location = new System.Drawing.Point(390, 415);
+            this.bntComplete.Location = new System.Drawing.Point(365, 415);
             this.bntComplete.Name = "bntComplete";
             this.bntComplete.Size = new System.Drawing.Size(116, 41);
             this.bntComplete.TabIndex = 0;
@@ -102,11 +103,22 @@
             this.lalOrderNumber.TabIndex = 8;
             this.lalOrderNumber.Text = "Order#";
             // 
+            // btnCookLogout
+            // 
+            this.btnCookLogout.Location = new System.Drawing.Point(581, 415);
+            this.btnCookLogout.Name = "btnCookLogout";
+            this.btnCookLogout.Size = new System.Drawing.Size(116, 41);
+            this.btnCookLogout.TabIndex = 9;
+            this.btnCookLogout.Text = "Logout";
+            this.btnCookLogout.UseVisualStyleBackColor = true;
+            this.btnCookLogout.Click += new System.EventHandler(this.btnCookLogout_Click);
+            // 
             // KitchenScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(719, 468);
+            this.Controls.Add(this.btnCookLogout);
             this.Controls.Add(this.lalOrderNumber);
             this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.txtOrderNum);
@@ -130,5 +142,6 @@
         private System.Windows.Forms.TextBox txtOrderNum;
         private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.Label lalOrderNumber;
+        private System.Windows.Forms.Button btnCookLogout;
     }
 }

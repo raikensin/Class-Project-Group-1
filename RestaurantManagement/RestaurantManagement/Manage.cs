@@ -88,5 +88,10 @@ namespace RestaurantManagement
             //Report newReport = new Report();
             //newReport.ShowDialog();
         }
+
+        private void btnInventoryReports_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

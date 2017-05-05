@@ -73,5 +73,11 @@ namespace RestaurantManagement
             }
             txtOrder1.Text = string.Empty; 
         }
+
+        private void btnCookLogout_Click(object sender, EventArgs e)
+        {
+            Login newLogOut = new Login();
+            newLogOut.ShowDialog();
+        }
     }
 }
