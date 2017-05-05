@@ -6,6 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
+using System.Data.Sql;
+using System.Data;
 using System.Windows.Forms;
 
 
@@ -50,7 +53,32 @@ namespace RestaurantManagement
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //Send to the database so cook can recieve it 
+            //Send to the database so cook can recieve it
+            SqlConnection connection = new SqlConnection();
+            //Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password = myPassword;
+            connection.ConnectionString = "Server=cis1.actx.edu;Database=project1;User Id=db1;Password = db10;";
+            connection.Open();
+            
+            try
+            {
+                //-----------insert---------------
+                using (SqlCommand insertNewOrder = connection.CreateCommand())
+                {
+                    insertNewOrder.CommandText = "insert into dbo.OrderTable values (@OrderID,@OrderDesc@OrderViewed);";
+                    var OrderIDParam = new SqlParameter("OrderID", SqlDbType.VarChar) { Value = Item.c };
+                    var OrderParam = new SqlParameter("OrderDesc", SqlDbType.VarChar) { Value = txtOrdersList.Text };
+                    var Orderview = new SqlParameter("OrderViewed", SqlDbType.Int) { Value = 0 };
+
+                    insertNewOrder.Parameters.Add(OrderIDParam);
+                    insertNewOrder.Parameters.Add(OrderParam);
+                    insertNewOrder.Parameters.Add(Orderview);
+                    insertNewOrder.ExecuteNonQuery();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Ordersfield from waiter.orders is blank.");
+            }
 
             //clear checkboxes
             chkHamburger.Checked = false;
@@ -67,6 +95,13 @@ namespace RestaurantManagement
             chkSprite.Checked = false;
             chkRootBeer.Checked = false;
             chkTea.Checked = false;
+            chkTable1.Checked = false;
+            chktable2.Checked = false;
+            chktable3.Checked = false;
+            chktable4.Checked = false;
+            chktable5.Checked = false;
+            chktable6.Checked = false;
+            txtOrdersList.Clear();
 
         }
 
