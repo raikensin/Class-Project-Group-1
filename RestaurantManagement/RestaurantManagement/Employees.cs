@@ -55,5 +55,11 @@ namespace RestaurantManagement
         {
            
         }
+
+        private void btnEmpLogout_Click(object sender, EventArgs e)
+        {
+            Login newLogOut = new Login();
+            newLogOut.ShowDialog();
+        }
     }
 }
