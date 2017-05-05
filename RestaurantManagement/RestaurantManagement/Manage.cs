@@ -84,8 +84,9 @@ namespace RestaurantManagement
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Report newReport = new Report();
-            newReport.ShowDialog();
+            
+            //Report newReport = new Report();
+            //newReport.ShowDialog();
         }
     }
 }
