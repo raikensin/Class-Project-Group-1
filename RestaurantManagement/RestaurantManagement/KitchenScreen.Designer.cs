@@ -37,7 +37,7 @@
             // 
             // bntComplete
             // 
-            this.bntComplete.Location = new System.Drawing.Point(111, 391);
+            this.bntComplete.Location = new System.Drawing.Point(282, 390);
             this.bntComplete.Name = "bntComplete";
             this.bntComplete.Size = new System.Drawing.Size(116, 41);
             this.bntComplete.TabIndex = 0;
@@ -69,9 +69,9 @@
             // 
             // btnRead
             // 
-            this.btnRead.Location = new System.Drawing.Point(12, 400);
+            this.btnRead.Location = new System.Drawing.Point(30, 390);
             this.btnRead.Name = "btnRead";
-            this.btnRead.Size = new System.Drawing.Size(75, 23);
+            this.btnRead.Size = new System.Drawing.Size(116, 41);
             this.btnRead.TabIndex = 5;
             this.btnRead.Text = "Read";
             this.btnRead.UseVisualStyleBackColor = true;
@@ -79,9 +79,9 @@
             // 
             // txtOrderNum
             // 
-            this.txtOrderNum.Location = new System.Drawing.Point(260, 403);
+            this.txtOrderNum.Location = new System.Drawing.Point(204, 401);
             this.txtOrderNum.Name = "txtOrderNum";
-            this.txtOrderNum.Size = new System.Drawing.Size(100, 20);
+            this.txtOrderNum.Size = new System.Drawing.Size(72, 20);
             this.txtOrderNum.TabIndex = 6;
             // 
             // KitchenScreen
