@@ -91,7 +91,7 @@ namespace RestaurantManagement
 
         public void GetInventory()
         {
-            throw new System.NotImplementedException();
+          
         }
     }
 }
