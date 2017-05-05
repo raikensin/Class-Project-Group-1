@@ -18,52 +18,16 @@ namespace RestaurantManagement
         private int managerLogin=4;
         private int waiterLogin=5;
         public int EmployeeID { get; set; }
-        //{
-        //    get
-        //    {
-        //        throw new System.NotImplementedException();
-        //    }
-
-        //    set
-        //    {
-        //    }
-        //}
+        
 
         public string EmployeeFirstName { get; set; }
-        //{
-        //    get
-        //    {
-        //        throw new System.NotImplementedException();
-        //    }
-
-        //    set
-        //    {
-        //    }
-        //}
+        
 
         public string EmployeeLastName { get; set; }
-        //{
-        //    get
-        //    {
-        //        throw new System.NotImplementedException();
-        //    }
-
-        //    set
-        //    {
-        //    }
-        //}
+       
 
         public double Hours { get; set; }
-        //{
-        //    get
-        //    {
-        //        throw new System.NotImplementedException();
-        //    }
-
-        //    set
-        //    {
-        //    }
-        //}
+       
 
         public double Wages
         {
