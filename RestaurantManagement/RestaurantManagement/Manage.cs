@@ -19,7 +19,8 @@ namespace RestaurantManagement
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Employee frm = new Employee();
+            Employees newEmpoyee = new Employees();
+            newEmpoyee.ShowDialog();
 
         }
 
@@ -79,6 +80,12 @@ namespace RestaurantManagement
         {
             FloorPlan newFloorPlan = new FloorPlan();
             newFloorPlan.ShowDialog();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Report newReport = new Report();
+            newReport.ShowDialog();
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.chkPickles = new System.Windows.Forms.CheckBox();
             this.chkLettuce = new System.Windows.Forms.CheckBox();
@@ -60,12 +61,12 @@
             this.btnSend = new System.Windows.Forms.Button();
             this.btnAddOrder = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.chkTable1 = new System.Windows.Forms.CheckBox();
-            this.chktable2 = new System.Windows.Forms.CheckBox();
-            this.chktable3 = new System.Windows.Forms.CheckBox();
-            this.chktable4 = new System.Windows.Forms.CheckBox();
-            this.chktable5 = new System.Windows.Forms.CheckBox();
             this.chktable6 = new System.Windows.Forms.CheckBox();
+            this.chktable5 = new System.Windows.Forms.CheckBox();
+            this.chktable4 = new System.Windows.Forms.CheckBox();
+            this.chktable3 = new System.Windows.Forms.CheckBox();
+            this.chktable2 = new System.Windows.Forms.CheckBox();
+            this.chkTable1 = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -74,6 +75,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Desktop;
             this.groupBox1.Controls.Add(this.chkPickles);
             this.groupBox1.Controls.Add(this.chkLettuce);
             this.groupBox1.Controls.Add(this.chkOnions);
@@ -84,7 +86,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(195, 219);
+            this.groupBox1.Size = new System.Drawing.Size(162, 219);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Hamburgers";
@@ -92,6 +94,7 @@
             // chkPickles
             // 
             this.chkPickles.AutoSize = true;
+            this.chkPickles.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.chkPickles.Location = new System.Drawing.Point(14, 154);
             this.chkPickles.Name = "chkPickles";
             this.chkPickles.Size = new System.Drawing.Size(85, 17);
@@ -102,6 +105,7 @@
             // chkLettuce
             // 
             this.chkLettuce.AutoSize = true;
+            this.chkLettuce.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.chkLettuce.Location = new System.Drawing.Point(14, 131);
             this.chkLettuce.Name = "chkLettuce";
             this.chkLettuce.Size = new System.Drawing.Size(92, 17);
@@ -112,6 +116,7 @@
             // chkOnions
             // 
             this.chkOnions.AutoSize = true;
+            this.chkOnions.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.chkOnions.Location = new System.Drawing.Point(15, 108);
             this.chkOnions.Name = "chkOnions";
             this.chkOnions.Size = new System.Drawing.Size(89, 17);
@@ -122,16 +127,19 @@
             // chkTomato
             // 
             this.chkTomato.AutoSize = true;
+            this.chkTomato.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.chkTomato.Location = new System.Drawing.Point(15, 85);
             this.chkTomato.Name = "chkTomato";
             this.chkTomato.Size = new System.Drawing.Size(92, 17);
             this.chkTomato.TabIndex = 7;
             this.chkTomato.Text = "Tomato $1.99";
             this.chkTomato.UseVisualStyleBackColor = true;
+            this.chkTomato.CheckedChanged += new System.EventHandler(this.chkTomato_CheckedChanged);
             // 
             // chkDoublePatty
             // 
             this.chkDoublePatty.AutoSize = true;
+            this.chkDoublePatty.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.chkDoublePatty.Location = new System.Drawing.Point(15, 63);
             this.chkDoublePatty.Name = "chkDoublePatty";
             this.chkDoublePatty.Size = new System.Drawing.Size(117, 17);
@@ -142,6 +150,7 @@
             // chkHamburger
             // 
             this.chkHamburger.AutoSize = true;
+            this.chkHamburger.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.chkHamburger.Location = new System.Drawing.Point(15, 37);
             this.chkHamburger.Margin = new System.Windows.Forms.Padding(2);
             this.chkHamburger.Name = "chkHamburger";
@@ -152,6 +161,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.InfoText;
             this.groupBox2.Controls.Add(this.chkPlainSalad);
             this.groupBox2.Controls.Add(this.chkFruitSalad);
             this.groupBox2.Controls.Add(this.chkGardenSalad);
@@ -160,7 +170,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(180, 219);
+            this.groupBox2.Size = new System.Drawing.Size(139, 219);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Salads";
@@ -169,6 +179,7 @@
             // chkPlainSalad
             // 
             this.chkPlainSalad.AutoSize = true;
+            this.chkPlainSalad.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.chkPlainSalad.Location = new System.Drawing.Point(16, 132);
             this.chkPlainSalad.Margin = new System.Windows.Forms.Padding(2);
             this.chkPlainSalad.Name = "chkPlainSalad";
@@ -180,6 +191,7 @@
             // chkFruitSalad
             // 
             this.chkFruitSalad.AutoSize = true;
+            this.chkFruitSalad.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.chkFruitSalad.Location = new System.Drawing.Point(16, 102);
             this.chkFruitSalad.Margin = new System.Windows.Forms.Padding(2);
             this.chkFruitSalad.Name = "chkFruitSalad";
@@ -191,6 +203,7 @@
             // chkGardenSalad
             // 
             this.chkGardenSalad.AutoSize = true;
+            this.chkGardenSalad.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.chkGardenSalad.Location = new System.Drawing.Point(16, 66);
             this.chkGardenSalad.Margin = new System.Windows.Forms.Padding(2);
             this.chkGardenSalad.Name = "chkGardenSalad";
@@ -203,6 +216,7 @@
             // chkHouseSalad
             // 
             this.chkHouseSalad.AutoSize = true;
+            this.chkHouseSalad.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.chkHouseSalad.Location = new System.Drawing.Point(16, 37);
             this.chkHouseSalad.Margin = new System.Windows.Forms.Padding(2);
             this.chkHouseSalad.Name = "chkHouseSalad";
@@ -213,6 +227,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.SystemColors.InfoText;
             this.groupBox3.Controls.Add(this.chkTea);
             this.groupBox3.Controls.Add(this.chkSprite);
             this.groupBox3.Controls.Add(this.chkCoke);
@@ -229,6 +244,7 @@
             // chkTea
             // 
             this.chkTea.AutoSize = true;
+            this.chkTea.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.chkTea.Location = new System.Drawing.Point(20, 121);
             this.chkTea.Margin = new System.Windows.Forms.Padding(2);
             this.chkTea.Name = "chkTea";
@@ -241,6 +257,7 @@
             // chkSprite
             // 
             this.chkSprite.AutoSize = true;
+            this.chkSprite.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.chkSprite.Location = new System.Drawing.Point(20, 58);
             this.chkSprite.Margin = new System.Windows.Forms.Padding(2);
             this.chkSprite.Name = "chkSprite";
@@ -252,6 +269,7 @@
             // chkCoke
             // 
             this.chkCoke.AutoSize = true;
+            this.chkCoke.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.chkCoke.Location = new System.Drawing.Point(20, 28);
             this.chkCoke.Margin = new System.Windows.Forms.Padding(2);
             this.chkCoke.Name = "chkCoke";
@@ -263,6 +281,7 @@
             // chkRootBeer
             // 
             this.chkRootBeer.AutoSize = true;
+            this.chkRootBeer.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.chkRootBeer.Location = new System.Drawing.Point(20, 89);
             this.chkRootBeer.Margin = new System.Windows.Forms.Padding(2);
             this.chkRootBeer.Name = "chkRootBeer";
@@ -274,7 +293,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(88, 328);
+            this.label1.BackColor = System.Drawing.SystemColors.InfoText;
+            this.label1.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label1.Location = new System.Drawing.Point(135, 328);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(31, 13);
@@ -283,6 +304,8 @@
             // 
             // txtOrdersList
             // 
+            this.txtOrdersList.BackColor = System.Drawing.SystemColors.Desktop;
+            this.txtOrdersList.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtOrdersList.Location = new System.Drawing.Point(20, 35);
             this.txtOrdersList.Margin = new System.Windows.Forms.Padding(2);
             this.txtOrdersList.Multiline = true;
@@ -294,6 +317,8 @@
             // 
             // txtTotal
             // 
+            this.txtTotal.BackColor = System.Drawing.SystemColors.InfoText;
+            this.txtTotal.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtTotal.Location = new System.Drawing.Point(170, 328);
             this.txtTotal.Margin = new System.Windows.Forms.Padding(2);
             this.txtTotal.Name = "txtTotal";
@@ -303,7 +328,9 @@
             // 
             // txtTax
             // 
-            this.txtTax.Location = new System.Drawing.Point(170, 358);
+            this.txtTax.BackColor = System.Drawing.SystemColors.InfoText;
+            this.txtTax.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtTax.Location = new System.Drawing.Point(170, 352);
             this.txtTax.Margin = new System.Windows.Forms.Padding(2);
             this.txtTax.Name = "txtTax";
             this.txtTax.Size = new System.Drawing.Size(96, 20);
@@ -311,7 +338,9 @@
             // 
             // txtSubtotal
             // 
-            this.txtSubtotal.Location = new System.Drawing.Point(170, 388);
+            this.txtSubtotal.BackColor = System.Drawing.SystemColors.InfoText;
+            this.txtSubtotal.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtSubtotal.Location = new System.Drawing.Point(170, 376);
             this.txtSubtotal.Margin = new System.Windows.Forms.Padding(2);
             this.txtSubtotal.Name = "txtSubtotal";
             this.txtSubtotal.Size = new System.Drawing.Size(96, 20);
@@ -320,7 +349,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(88, 388);
+            this.label2.BackColor = System.Drawing.SystemColors.InfoText;
+            this.label2.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label2.Location = new System.Drawing.Point(113, 379);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
@@ -330,7 +361,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(88, 358);
+            this.label3.BackColor = System.Drawing.SystemColors.InfoText;
+            this.label3.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label3.Location = new System.Drawing.Point(109, 355);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 13);
@@ -340,29 +373,36 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(118, 19);
+            this.label4.BackColor = System.Drawing.SystemColors.ControlText;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label4.Location = new System.Drawing.Point(108, 9);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 13);
+            this.label4.Size = new System.Drawing.Size(91, 24);
             this.label4.TabIndex = 9;
             this.label4.Text = "Order List";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(27, 432);
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(27, 456);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 37);
+            this.button1.Size = new System.Drawing.Size(114, 21);
             this.button1.TabIndex = 10;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(746, 440);
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button2.Location = new System.Drawing.Point(746, 456);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(114, 37);
+            this.button2.Size = new System.Drawing.Size(114, 21);
             this.button2.TabIndex = 11;
             this.button2.Text = "Exit";
             this.button2.UseVisualStyleBackColor = true;
@@ -370,10 +410,12 @@
             // 
             // btnSend
             // 
-            this.btnSend.Location = new System.Drawing.Point(171, 432);
+            this.btnSend.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSend.BackgroundImage")));
+            this.btnSend.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnSend.Location = new System.Drawing.Point(170, 456);
             this.btnSend.Margin = new System.Windows.Forms.Padding(2);
             this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(114, 37);
+            this.btnSend.Size = new System.Drawing.Size(114, 21);
             this.btnSend.TabIndex = 12;
             this.btnSend.Text = "Sent";
             this.btnSend.UseVisualStyleBackColor = true;
@@ -381,9 +423,11 @@
             // 
             // btnAddOrder
             // 
-            this.btnAddOrder.Location = new System.Drawing.Point(591, 440);
+            this.btnAddOrder.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddOrder.BackgroundImage")));
+            this.btnAddOrder.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnAddOrder.Location = new System.Drawing.Point(627, 456);
             this.btnAddOrder.Name = "btnAddOrder";
-            this.btnAddOrder.Size = new System.Drawing.Size(114, 37);
+            this.btnAddOrder.Size = new System.Drawing.Size(114, 21);
             this.btnAddOrder.TabIndex = 14;
             this.btnAddOrder.Text = "Add Order";
             this.btnAddOrder.UseVisualStyleBackColor = true;
@@ -391,72 +435,24 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.BackColor = System.Drawing.SystemColors.InfoText;
             this.groupBox4.Controls.Add(this.chktable6);
             this.groupBox4.Controls.Add(this.chktable5);
             this.groupBox4.Controls.Add(this.chktable4);
             this.groupBox4.Controls.Add(this.chktable3);
             this.groupBox4.Controls.Add(this.chktable2);
             this.groupBox4.Controls.Add(this.chkTable1);
-            this.groupBox4.Location = new System.Drawing.Point(325, 259);
+            this.groupBox4.Location = new System.Drawing.Point(670, 268);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(210, 89);
             this.groupBox4.TabIndex = 15;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Select Table";
             // 
-            // chkTable1
-            // 
-            this.chkTable1.AutoSize = true;
-            this.chkTable1.Location = new System.Drawing.Point(12, 30);
-            this.chkTable1.Name = "chkTable1";
-            this.chkTable1.Size = new System.Drawing.Size(65, 17);
-            this.chkTable1.TabIndex = 0;
-            this.chkTable1.Text = "Table 1 ";
-            this.chkTable1.UseVisualStyleBackColor = true;
-            // 
-            // chktable2
-            // 
-            this.chktable2.AutoSize = true;
-            this.chktable2.Location = new System.Drawing.Point(77, 31);
-            this.chktable2.Name = "chktable2";
-            this.chktable2.Size = new System.Drawing.Size(62, 17);
-            this.chktable2.TabIndex = 1;
-            this.chktable2.Text = "Table 2";
-            this.chktable2.UseVisualStyleBackColor = true;
-            // 
-            // chktable3
-            // 
-            this.chktable3.AutoSize = true;
-            this.chktable3.Location = new System.Drawing.Point(145, 31);
-            this.chktable3.Name = "chktable3";
-            this.chktable3.Size = new System.Drawing.Size(62, 17);
-            this.chktable3.TabIndex = 2;
-            this.chktable3.Text = "Table 3";
-            this.chktable3.UseVisualStyleBackColor = true;
-            // 
-            // chktable4
-            // 
-            this.chktable4.AutoSize = true;
-            this.chktable4.Location = new System.Drawing.Point(12, 53);
-            this.chktable4.Name = "chktable4";
-            this.chktable4.Size = new System.Drawing.Size(59, 17);
-            this.chktable4.TabIndex = 3;
-            this.chktable4.Text = "Table4";
-            this.chktable4.UseVisualStyleBackColor = true;
-            // 
-            // chktable5
-            // 
-            this.chktable5.AutoSize = true;
-            this.chktable5.Location = new System.Drawing.Point(77, 53);
-            this.chktable5.Name = "chktable5";
-            this.chktable5.Size = new System.Drawing.Size(62, 17);
-            this.chktable5.TabIndex = 4;
-            this.chktable5.Text = "Table 5";
-            this.chktable5.UseVisualStyleBackColor = true;
-            // 
             // chktable6
             // 
             this.chktable6.AutoSize = true;
+            this.chktable6.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.chktable6.Location = new System.Drawing.Point(145, 53);
             this.chktable6.Name = "chktable6";
             this.chktable6.Size = new System.Drawing.Size(59, 17);
@@ -464,10 +460,67 @@
             this.chktable6.Text = "Table6";
             this.chktable6.UseVisualStyleBackColor = true;
             // 
+            // chktable5
+            // 
+            this.chktable5.AutoSize = true;
+            this.chktable5.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.chktable5.Location = new System.Drawing.Point(77, 53);
+            this.chktable5.Name = "chktable5";
+            this.chktable5.Size = new System.Drawing.Size(62, 17);
+            this.chktable5.TabIndex = 4;
+            this.chktable5.Text = "Table 5";
+            this.chktable5.UseVisualStyleBackColor = true;
+            // 
+            // chktable4
+            // 
+            this.chktable4.AutoSize = true;
+            this.chktable4.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.chktable4.Location = new System.Drawing.Point(12, 53);
+            this.chktable4.Name = "chktable4";
+            this.chktable4.Size = new System.Drawing.Size(59, 17);
+            this.chktable4.TabIndex = 3;
+            this.chktable4.Text = "Table4";
+            this.chktable4.UseVisualStyleBackColor = true;
+            // 
+            // chktable3
+            // 
+            this.chktable3.AutoSize = true;
+            this.chktable3.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.chktable3.Location = new System.Drawing.Point(145, 31);
+            this.chktable3.Name = "chktable3";
+            this.chktable3.Size = new System.Drawing.Size(62, 17);
+            this.chktable3.TabIndex = 2;
+            this.chktable3.Text = "Table 3";
+            this.chktable3.UseVisualStyleBackColor = true;
+            // 
+            // chktable2
+            // 
+            this.chktable2.AutoSize = true;
+            this.chktable2.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.chktable2.Location = new System.Drawing.Point(77, 31);
+            this.chktable2.Name = "chktable2";
+            this.chktable2.Size = new System.Drawing.Size(62, 17);
+            this.chktable2.TabIndex = 1;
+            this.chktable2.Text = "Table 2";
+            this.chktable2.UseVisualStyleBackColor = true;
+            // 
+            // chkTable1
+            // 
+            this.chkTable1.AutoSize = true;
+            this.chkTable1.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.chkTable1.Location = new System.Drawing.Point(12, 30);
+            this.chkTable1.Name = "chkTable1";
+            this.chkTable1.Size = new System.Drawing.Size(65, 17);
+            this.chkTable1.TabIndex = 0;
+            this.chkTable1.Text = "Table 1 ";
+            this.chkTable1.UseVisualStyleBackColor = true;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(882, 485);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.btnAddOrder);
@@ -485,6 +538,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Menu";
             this.Text = "Menu";

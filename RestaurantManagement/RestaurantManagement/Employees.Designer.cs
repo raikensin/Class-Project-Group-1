@@ -44,6 +44,7 @@
             this.txtNewFirstName = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -137,7 +138,7 @@
             // 
             this.txtNewStartDate.Location = new System.Drawing.Point(97, 170);
             this.txtNewStartDate.Name = "txtNewStartDate";
-            this.txtNewStartDate.Size = new System.Drawing.Size(208, 20);
+            this.txtNewStartDate.Size = new System.Drawing.Size(204, 20);
             this.txtNewStartDate.TabIndex = 20;
             // 
             // txtNewPosition
@@ -190,7 +191,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(322, 333);
+            this.button1.Location = new System.Drawing.Point(201, 332);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(148, 43);
@@ -199,14 +200,23 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(374, 332);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(148, 43);
+            this.btnSave.TabIndex = 19;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(514, 333);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Location = new System.Drawing.Point(545, 332);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(148, 43);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "button2";
+            this.button2.Size = new System.Drawing.Size(134, 43);
+            this.button2.TabIndex = 20;
+            this.button2.Text = "Delete";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // Employees
@@ -215,6 +225,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(727, 386);
             this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
@@ -238,12 +249,13 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TextBox txtNewStartDate;
         private System.Windows.Forms.TextBox txtNewPosition;
         private System.Windows.Forms.TextBox txtNewPhoneNumber;
         private System.Windows.Forms.TextBox txtNewAddress;
         private System.Windows.Forms.TextBox txtNewLastName;
         private System.Windows.Forms.TextBox txtNewFirstName;
+        private System.Windows.Forms.Button button2;
     }
 }
