@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Data.SqlClient;
+using System.Data.Sql;
+
 namespace RestaurantManagement
 {
     public partial class Login : Form
@@ -31,10 +34,17 @@ namespace RestaurantManagement
         private void txtBoxLogin_TextChanged(object sender, EventArgs e)
         {
         }
-         
-         private void btnBackLoginForm_Click(object sender, EventArgs e)
-        {
 
+        private void btnBackLoginForm_Click(object sender, EventArgs e)
+        {
+            if ((String.Compare(txtBoxLogin.Text, " ") < 0))
+            {
+                txtBoxLogin.Text = txtBoxLogin.Text.Substring(0, txtBoxLogin.Text.Length - 1 + 1);
+            }
+            else
+            {
+                txtBoxLogin.Text = txtBoxLogin.Text.Substring(0, txtBoxLogin.Text.Length - 1);
+            }
         }
 
         private void btn2LoginForm_Click(object sender, EventArgs e)
@@ -85,8 +95,62 @@ namespace RestaurantManagement
 
         private void btnEnter_Click(object sender, EventArgs e)
         {
-            
+            txtBoxLogin.Text = String.Empty;
+        }
+
+        private void btnLoginLoginForm_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection("Server=cis1.actx.edu;Database=project1;User Id=db1;Password = db10;");
+
+            connection.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM dbo.Manager WHERE ID=" + txtBoxLogin.Text, connection);
+
+            DataTable dt = new DataTable(); //this is creating a virtual table  
+            sda.Fill(dt);
+            if (dt.Rows[0].Field<int>("ID").ToString() == "123456")
+            {
+                this.Hide();
+                new Manage().Show();
+            }
+            else
+            {
+
+                this.Hide();
+                new Employees().Show();
+            }
+
+            //try
+            //{
+            //    if (dt.Rows.Count == 1)
+            //    {
+            //        switch (dt.Rows[0]["Role"] as string)
+            //        {
+            //            case "Admin":
+            //                {
+            //                    this.Hide();
+            //                    Manage aMenu = new Manage();
+            //                    aMenu.Show();
+            //                    break;
+            //                }
+            //            case "Employee":
+            //                {
+            //                    this.Hide();
+            //                    Employees pMenu = new Employees();
+            //                    pMenu.Show();
+            //                    break;
+            //                }
+
+            //        }
+            //    }
+            //}
+            //catch (SqlException ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //    //Form.Close();
+            //}
+
+
         }
     }
-    
 }
+

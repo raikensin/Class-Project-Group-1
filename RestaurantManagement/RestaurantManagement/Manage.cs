@@ -19,7 +19,8 @@ namespace RestaurantManagement
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Employee frm = new Employee();
+            Employees newEmpoyee = new Employees();
+            newEmpoyee.ShowDialog();
 
         }
 
@@ -39,28 +40,52 @@ namespace RestaurantManagement
         }
 
         private void btnmenu_Click(object sender, EventArgs e)
+            // if menu button is clicked on manager form it will open the menu
         {
-            Menu manager = new Menu();
-            manager.ShowDialog();
+            Menu newMenu = new Menu();
+            newMenu.ShowDialog();
         }
 
         private void btnAssignTables_Click(object sender, EventArgs e)
+            // if floor button is clicked it will open the floor plan
         {
-            FloorPlan manager = new FloorPlan();
-            manager.ShowDialog();
+            FloorPlan newFloorPlan = new FloorPlan();
+            newFloorPlan.ShowDialog();
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            Login manger = new Login();
-            manger.ShowDialog();
+            // if the logout button is clicked it will open the login screen 
+            Login newLogOut = new Login();
+            newLogOut.ShowDialog();
         }
 
         private void btnCook_Click(object sender, EventArgs e)
+            // if the kitchen screen button is clicked it will open the kitchen screen 
         {
-            KitchenScreen manager = new KitchenScreen();
-            manager.ShowDialog();
+            KitchenScreen newKitchenScreen = new KitchenScreen();
+            newKitchenScreen.ShowDialog();
 
+        }
+
+        private void btnAddEmployee_Click(object sender, EventArgs e)
+            // if the add employee button is clicked it will open the employees form (and ideally add the new employee to the database)
+        {
+            Employees showEmployees = new Employees();
+            showEmployees.ShowDialog();
+        }
+
+        private void btnHostBusBoy_Click(object sender, EventArgs e)
+            // if the floor plan is synced it will open the floor plan
+        {
+            FloorPlan newFloorPlan = new FloorPlan();
+            newFloorPlan.ShowDialog();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Report newReport = new Report();
+            newReport.ShowDialog();
         }
     }
 }
