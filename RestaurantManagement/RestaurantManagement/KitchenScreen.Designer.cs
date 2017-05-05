@@ -32,11 +32,12 @@
             this.txtOrder1 = new System.Windows.Forms.TextBox();
             this.lblKitchen = new System.Windows.Forms.Label();
             this.btnRead = new System.Windows.Forms.Button();
+            this.txtOrderNum = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // bntComplete
             // 
-            this.bntComplete.Location = new System.Drawing.Point(207, 391);
+            this.bntComplete.Location = new System.Drawing.Point(111, 391);
             this.bntComplete.Name = "bntComplete";
             this.bntComplete.Size = new System.Drawing.Size(116, 41);
             this.bntComplete.TabIndex = 0;
@@ -46,9 +47,11 @@
             // 
             // txtOrder1
             // 
+            this.txtOrder1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtOrder1.Location = new System.Drawing.Point(7, 36);
             this.txtOrder1.Multiline = true;
             this.txtOrder1.Name = "txtOrder1";
+            this.txtOrder1.ReadOnly = true;
             this.txtOrder1.Size = new System.Drawing.Size(700, 347);
             this.txtOrder1.TabIndex = 2;
             this.txtOrder1.TextChanged += new System.EventHandler(this.txtOrder1_TextChanged);
@@ -66,7 +69,7 @@
             // 
             // btnRead
             // 
-            this.btnRead.Location = new System.Drawing.Point(111, 400);
+            this.btnRead.Location = new System.Drawing.Point(12, 400);
             this.btnRead.Name = "btnRead";
             this.btnRead.Size = new System.Drawing.Size(75, 23);
             this.btnRead.TabIndex = 5;
@@ -74,11 +77,19 @@
             this.btnRead.UseVisualStyleBackColor = true;
             this.btnRead.Click += new System.EventHandler(this.btnRead_Click);
             // 
+            // txtOrderNum
+            // 
+            this.txtOrderNum.Location = new System.Drawing.Point(260, 403);
+            this.txtOrderNum.Name = "txtOrderNum";
+            this.txtOrderNum.Size = new System.Drawing.Size(100, 20);
+            this.txtOrderNum.TabIndex = 6;
+            // 
             // KitchenScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(719, 442);
+            this.Controls.Add(this.txtOrderNum);
             this.Controls.Add(this.btnRead);
             this.Controls.Add(this.lblKitchen);
             this.Controls.Add(this.txtOrder1);
@@ -96,5 +107,6 @@
         private System.Windows.Forms.TextBox txtOrder1;
         private System.Windows.Forms.Label lblKitchen;
         private System.Windows.Forms.Button btnRead;
+        private System.Windows.Forms.TextBox txtOrderNum;
     }
 }

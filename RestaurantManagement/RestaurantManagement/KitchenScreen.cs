@@ -33,21 +33,21 @@ namespace RestaurantManagement
         private void btnRead_Click(object sender, EventArgs e)
         {
             SqlConnection connection = new SqlConnection();
-            //Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password = myPassword;
+            
             connection.ConnectionString = "Server=cis1.actx.edu;Database=project1;User Id=db1;Password = db10;";
             connection.Open();
 
           
             using (SqlCommand readAllOrderRecords = connection.CreateCommand())
             {
-                readAllOrderRecords.CommandText = "select * from dbo.OrderTable;";
+                readAllOrderRecords.CommandText = "select * from dbo.OrderTable where OrderViewed = 0;";
 
                 using (SqlDataReader reader = readAllOrderRecords.ExecuteReader())
                 {
                     string rec = "";
                     while (reader.Read())
                     {
-                        rec = reader.GetString(1) + " \r\n";
+                        rec += reader.GetString(1) + " \r\n";
                         //rec += reader.GetString(2);
                         
                         txtOrder1.Text=rec;
@@ -58,6 +58,19 @@ namespace RestaurantManagement
 
         private void bntComplete_Click(object sender, EventArgs e)
         {
+            int OrdN = Int32.Parse(txtOrderNum.Text);
+
+            SqlConnection connection = new SqlConnection();
+            
+            connection.ConnectionString = "Server=cis1.actx.edu;Database=project1;User Id=db1;Password = db10;";
+            connection.Open();
+            using (SqlCommand updateOrders = connection.CreateCommand())
+            {
+                updateOrders.CommandText = "update dbo.OrderTable set OrderViewed = 1 where OrderID =" + OrdN + ";";
+                var orderupParam = new SqlParameter("OrderViewed", SqlDbType.Int) { Value =1 };
+                updateOrders.Parameters.Add(orderupParam);
+                updateOrders.ExecuteNonQuery();
+            }
             txtOrder1.Text = string.Empty; 
         }
     }
