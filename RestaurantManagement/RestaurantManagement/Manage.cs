@@ -40,14 +40,14 @@ namespace RestaurantManagement
         }
 
         private void btnmenu_Click(object sender, EventArgs e)
-            // if menu button is clicked on manager form it will open the menu
+        // if menu button is clicked on manager form it will open the menu
         {
             Menu newMenu = new Menu();
             newMenu.ShowDialog();
         }
 
         private void btnAssignTables_Click(object sender, EventArgs e)
-            // if floor button is clicked it will open the floor plan
+        // if floor button is clicked it will open the floor plan
         {
             FloorPlan newFloorPlan = new FloorPlan();
             newFloorPlan.ShowDialog();
@@ -61,7 +61,7 @@ namespace RestaurantManagement
         }
 
         private void btnCook_Click(object sender, EventArgs e)
-            // if the kitchen screen button is clicked it will open the kitchen screen 
+        // if the kitchen screen button is clicked it will open the kitchen screen 
         {
             KitchenScreen newKitchenScreen = new KitchenScreen();
             newKitchenScreen.ShowDialog();
@@ -69,14 +69,14 @@ namespace RestaurantManagement
         }
 
         private void btnAddEmployee_Click(object sender, EventArgs e)
-            // if the add employee button is clicked it will open the employees form (and ideally add the new employee to the database)
+        // if the add employee button is clicked it will open the employees form (and ideally add the new employee to the database)
         {
             Employees showEmployees = new Employees();
             showEmployees.ShowDialog();
         }
 
         private void btnHostBusBoy_Click(object sender, EventArgs e)
-            // if the floor plan is synced it will open the floor plan
+        // if the floor plan is synced it will open the floor plan
         {
             FloorPlan newFloorPlan = new FloorPlan();
             newFloorPlan.ShowDialog();
@@ -84,14 +84,36 @@ namespace RestaurantManagement
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            
+
             //Report newReport = new Report();
             //newReport.ShowDialog();
         }
 
         private void btnInventoryReports_Click(object sender, EventArgs e)
         {
+            SqlConnection connection = new SqlConnection();
 
+            connection.ConnectionString = "Server=cis1.actx.edu;Database=project1;User Id=db1;Password = db10;";
+            connection.Open();
+
+
+            using (SqlCommand readAllInventoryRecords = connection.CreateCommand())
+            {
+                readAllInventoryRecords.CommandText = "select * from dbo.Inventory where OrderViewed = 0;";
+
+                using (SqlDataReader reader = readAllInventoryRecords.ExecuteReader())
+                {
+                    string rec = "";
+                    while (reader.Read())
+                    {
+                        rec += reader.GetString(1) + " \r\n";
+                        
+
+                        txtInventory.Text = rec;
+                    }
+                }
+            }
         }
+    }
     }
 }

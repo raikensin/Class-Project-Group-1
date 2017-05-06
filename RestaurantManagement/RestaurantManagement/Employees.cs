@@ -61,5 +61,22 @@ namespace RestaurantManagement
             Login newLogOut = new Login();
             newLogOut.ShowDialog();
         }
+
+        private void Employees_Load(object sender, EventArgs e)
+        {
+            AddEmployee newAddEmploy = new AddEmployee();
+            newAddEmploy.ShowDialog();
+
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNewPhoneNumber_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

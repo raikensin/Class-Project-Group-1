@@ -155,6 +155,7 @@
             this.txtNewPhoneNumber.Name = "txtNewPhoneNumber";
             this.txtNewPhoneNumber.Size = new System.Drawing.Size(204, 20);
             this.txtNewPhoneNumber.TabIndex = 18;
+            this.txtNewPhoneNumber.TextChanged += new System.EventHandler(this.txtNewPhoneNumber_TextChanged);
             // 
             // txtNewAddress
             // 
@@ -210,6 +211,7 @@
             this.btnSave.TabIndex = 19;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // button2
             // 
@@ -244,6 +246,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Employees";
             this.Text = "Employees";
+            this.Load += new System.EventHandler(this.Employees_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

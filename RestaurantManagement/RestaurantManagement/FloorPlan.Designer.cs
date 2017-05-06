@@ -161,6 +161,7 @@
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Table 1 Status";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // radTable1Dirty
             // 
@@ -353,6 +354,7 @@
             this.groupBox5.TabIndex = 10;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Table 5 Status";
+            this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
             // 
             // radTble5Dirty
             // 
