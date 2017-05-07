@@ -1,4 +1,6 @@
-﻿namespace RestaurantManagement
+﻿using System;
+
+namespace RestaurantManagement
 {
     partial class AddEmployee
     {
@@ -192,6 +194,11 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void AddEmployee_Load(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

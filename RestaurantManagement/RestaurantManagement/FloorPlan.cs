@@ -163,6 +163,7 @@ namespace RestaurantManagement
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+
         }
 
         private void groupBox5_Enter(object sender, EventArgs e)
