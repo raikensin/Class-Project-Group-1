@@ -32,7 +32,6 @@ namespace RestaurantManagement
         {
             this.btnCreate = new System.Windows.Forms.Button();
             this.txtStartDate = new System.Windows.Forms.TextBox();
-            this.txtPosition = new System.Windows.Forms.TextBox();
             this.txtPhoneNumber = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtLastName = new System.Windows.Forms.TextBox();
@@ -44,6 +43,9 @@ namespace RestaurantManagement
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
+            this.cmbPosition = new System.Windows.Forms.ComboBox();
+            this.txtEmpID = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCreate
@@ -62,13 +64,6 @@ namespace RestaurantManagement
             this.txtStartDate.Name = "txtStartDate";
             this.txtStartDate.Size = new System.Drawing.Size(204, 20);
             this.txtStartDate.TabIndex = 32;
-            // 
-            // txtPosition
-            // 
-            this.txtPosition.Location = new System.Drawing.Point(296, 179);
-            this.txtPosition.Name = "txtPosition";
-            this.txtPosition.Size = new System.Drawing.Size(204, 20);
-            this.txtPosition.TabIndex = 31;
             // 
             // txtPhoneNumber
             // 
@@ -141,7 +136,7 @@ namespace RestaurantManagement
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(239, 174);
+            this.label4.Location = new System.Drawing.Point(239, 179);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 13);
@@ -169,14 +164,49 @@ namespace RestaurantManagement
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // cmbPosition
+            // 
+            this.cmbPosition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPosition.FormattingEnabled = true;
+            this.cmbPosition.Items.AddRange(new object[] {
+            "Manager",
+            "Waiter",
+            "Busboy",
+            "Cook",
+            "Host"});
+            this.cmbPosition.Location = new System.Drawing.Point(297, 179);
+            this.cmbPosition.Name = "cmbPosition";
+            this.cmbPosition.Size = new System.Drawing.Size(203, 21);
+            this.cmbPosition.TabIndex = 34;
+            this.cmbPosition.SelectedIndexChanged += new System.EventHandler(this.cmbPosition_SelectedIndexChanged);
+            // 
+            // txtEmpID
+            // 
+            this.txtEmpID.Location = new System.Drawing.Point(297, 51);
+            this.txtEmpID.Name = "txtEmpID";
+            this.txtEmpID.Size = new System.Drawing.Size(204, 20);
+            this.txtEmpID.TabIndex = 36;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(232, 51);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(45, 13);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "Emp ID:";
+            // 
             // AddEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(748, 493);
+            this.Controls.Add(this.txtEmpID);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cmbPosition);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.txtStartDate);
-            this.Controls.Add(this.txtPosition);
             this.Controls.Add(this.txtPhoneNumber);
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.txtLastName);
@@ -204,7 +234,6 @@ namespace RestaurantManagement
         #endregion
         private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.TextBox txtStartDate;
-        private System.Windows.Forms.TextBox txtPosition;
         private System.Windows.Forms.TextBox txtPhoneNumber;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.TextBox txtLastName;
@@ -216,5 +245,8 @@ namespace RestaurantManagement
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.ComboBox cmbPosition;
+        private System.Windows.Forms.TextBox txtEmpID;
+        private System.Windows.Forms.Label label1;
     }
 }

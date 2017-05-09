@@ -103,20 +103,38 @@ namespace RestaurantManagement
             SqlConnection connection = new SqlConnection("Server=cis1.actx.edu;Database=project1;User Id=db1;Password = db10;");
 
             connection.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM dbo.Manager WHERE ID=" + txtBoxLogin.Text, connection);
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM dbo.Employees Join dbo.Roles on Roles.EmpCode = Employees.RoleCode WHERE EmployeeID=" + txtBoxLogin.Text, connection);
 
             DataTable dt = new DataTable(); //this is creating a virtual table  
             sda.Fill(dt);
-            if (dt.Rows[0].Field<int>("ID").ToString() == "123456")
+            if (dt.Rows.Count > 0)
             {
-                this.Hide();
-                new Manage().Show();
-            }
-            else
-            {
+                
 
-                this.Hide();
-                new Employees().Show();
+                switch(dt.Rows[0].Field<string>("EmpRole"))
+                {
+                    case "Manager":
+                        this.Hide();
+                        new Manage().Show();
+                        break;
+
+                    case "Waiter":
+                        this.Hide();
+                        new Menu().Show();
+                        break;
+
+                    case "Host":
+                        this.Hide();
+                        new FloorPlan().Show();
+                        break;
+
+                    case "Cook":
+                        this.Hide();
+                        new KitchenScreen().Show();
+                        break;
+                            
+                }
+                                
             }
 
             //try
