@@ -14,17 +14,7 @@ namespace RestaurantManagement
         private string tableStatus;
 
         public string TableStatus { get; set; }
-        //{
-        //    get
-        //    {
-        //        throw new System.NotImplementedException();
-        //    }
-
-        //    set
-        //    {
-        //    }
-        //}
-
+        
         public void ChangeTableStatus()
         {
             throw new System.NotImplementedException();

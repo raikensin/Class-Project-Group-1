@@ -95,6 +95,10 @@ namespace RestaurantManagement
                 }
             }
 
+            this.Hide();
+            Employees newEmpoyee = new Employees();
+            newEmpoyee.ShowDialog();
+
         }
 
         /// <summary>

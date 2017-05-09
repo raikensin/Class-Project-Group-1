@@ -10,7 +10,7 @@ using System.Data.SqlClient;
 using System.Data.Sql;
 using System.Data;
 using System.Windows.Forms;
-
+using RestaurantManagement.Classes;
 
 namespace RestaurantManagement
 {
@@ -73,6 +73,12 @@ namespace RestaurantManagement
                     insertNewOrder.Parameters.Add(OrderParam);
                     insertNewOrder.Parameters.Add(Orderview);
                     insertNewOrder.ExecuteNonQuery();
+
+                   
+
+
+
+
                 }
             }
             catch(Exception ex)
@@ -847,6 +853,13 @@ namespace RestaurantManagement
         private void txtOrdersList_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Employees newEmpoyee = new Employees();
+            newEmpoyee.ShowDialog();
         }
     }
 }
