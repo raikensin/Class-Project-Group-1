@@ -55,7 +55,7 @@ namespace RestaurantManagement
         {
             //Send to the database so cook can recieve it
             SqlConnection connection = new SqlConnection();
-            //Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password = myPassword;
+            
             connection.ConnectionString = "Server=cis1.actx.edu;Database=project1;User Id=db1;Password = db10;";
             connection.Open();
             
@@ -65,7 +65,7 @@ namespace RestaurantManagement
                 using (SqlCommand insertNewOrder = connection.CreateCommand())
                 {
                     insertNewOrder.CommandText = "insert into dbo.OrderTable values (@OrderID,@OrderDesc@OrderViewed);";
-                    var OrderIDParam = new SqlParameter("OrderID", SqlDbType.VarChar) { Value = Item.c };
+                    var OrderIDParam = new SqlParameter("OrderID", SqlDbType.Int) { Value = Item.c };
                     var OrderParam = new SqlParameter("OrderDesc", SqlDbType.VarChar) { Value = txtOrdersList.Text };
                     var Orderview = new SqlParameter("OrderViewed", SqlDbType.Int) { Value = 0 };
 
@@ -102,6 +102,9 @@ namespace RestaurantManagement
             chktable5.Checked = false;
             chktable6.Checked = false;
             txtOrdersList.Clear();
+            txtSubtotal.Clear();
+            txtTax.Clear();
+            txtTotal.Clear();
 
         }
 
@@ -113,6 +116,7 @@ namespace RestaurantManagement
         private void btnAddOrder_Click(object sender, EventArgs e)
         {
             string table = "";
+            int Quant = 0;
             if (chkTable1.Checked == true)
             {
                 //table should be stored from/to the database not stored in string
@@ -139,7 +143,7 @@ namespace RestaurantManagement
             {
                 table = "Table 6";
             }
-            Item.c++;
+           
             txtOrdersList.Text += "----Order#" + Item.c + " for table: " + table + " ----- \r\n";
             if (chkHamburger.Checked == true)
             {
@@ -150,8 +154,8 @@ namespace RestaurantManagement
                 //get the total from item class
                 Item.runningTotal += Item.Hamburgerprice();
                 // get the total for that item
-                Item.GetQuantity(1);
-                int Quant = 0;
+
+                
 
 
                 //grab from the database what the quantity is -1
@@ -173,26 +177,28 @@ namespace RestaurantManagement
                             Quant = reader.GetInt32(0);
                         }
                     }
-                    //update the table.
-                    
-                    using (SqlCommand updateitem = connection.CreateCommand())
-                    {
-                        updateitem.CommandText = "update dbo.Inventory set Quantity = Quantity-1 where ItemID = 1 ;";
-                        var orderupParam = new SqlParameter("Quantity", SqlDbType.Int) { Value = (Quant - 1) };
-                        updateitem.Parameters.Add(orderupParam);
-                        updateitem.ExecuteNonQuery();
+                }
+                //update the table.
+
+                using (SqlCommand updateitem = connection.CreateCommand())
+                {
+                    updateitem.CommandText = "update dbo.Inventory set Quantity = Quantity-1 where ItemID = 1 ;";
+                    var orderupParam = new SqlParameter("Quantity", SqlDbType.Int) { Value = (Quant - 1) };
+                    updateitem.Parameters.Add(orderupParam);
+                    updateitem.ExecuteNonQuery();
 
 
 
-                    }
-
+                }
+            }
+            //DoublePatty
                     if (chkDoublePatty.Checked == true)
                     {
                         txtOrdersList.Text += Item.doublepatty + "\r\n";
                         Waiter.orders = Item.doublepatty;
                         Item.runningTotal += Item.doublepattyprice();
-                        Item.GetQuantity(1);
-                        
+
+
 
 
                         //grab from the database what the quantity is -1
@@ -207,7 +213,7 @@ namespace RestaurantManagement
 
                             dp.CommandText = "select Quantity from dbo.Inventory where ItemID=2;";
 
-                            using (SqlDataReader reader = readAllRecords.ExecuteReader())
+                            using (SqlDataReader reader = dp.ExecuteReader())
                             {
                                 while (reader.Read())
                                 {
@@ -215,7 +221,7 @@ namespace RestaurantManagement
                                 }
                             }
                             //update the table.
-                           
+
                             using (SqlCommand updateitem = connection3.CreateCommand())
                             {
                                 updateitem.CommandText = "update dbo.Inventory set Quantity = Quantity-1 where ItemID = 2 ;";
@@ -228,91 +234,456 @@ namespace RestaurantManagement
                             }
 
                         }
+                    }
                         if (chkTomato.Checked == true)
                         {
                             txtOrdersList.Text += Item.tomato + "\r\n";
                             Waiter.orders += Item.tomato;
                             Item.runningTotal += Item.tomatoprice();
-                            Item.GetQuantity(1);
+                SqlConnection connection3 = new SqlConnection();
+                //Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password = myPassword;
+                connection3.ConnectionString = "Server=cis1.actx.edu;Database=project1;User Id=db1;Password = db10;";
+                connection3.Open();
+
+                using (SqlCommand dp = connection3.CreateCommand())
+                {
+
+                    dp.CommandText = "select Quantity from dbo.Inventory where ItemID=3;";
+
+                    using (SqlDataReader reader = dp.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Quant = reader.GetInt32(0);
                         }
+                    }
+                    //update the table.
+
+                    using (SqlCommand updateitem = connection3.CreateCommand())
+                    {
+                        updateitem.CommandText = "update dbo.Inventory set Quantity = Quantity-1 where ItemID = 3 ;";
+                        var dpu = new SqlParameter("Quantity", SqlDbType.Int) { Value = (Quant - 1) };
+                        updateitem.Parameters.Add(dpu);
+                        updateitem.ExecuteNonQuery();
+
+
+
+                    }
+
+                }
+
+            }
                         if (chkOnions.Checked == true)
                         {
                             txtOrdersList.Text += Item.onions + "\r\n";
                             Waiter.orders += Item.onions;
                             Item.runningTotal += Item.onionprice();
-                            Item.GetQuantity(1);
+                SqlConnection connection3 = new SqlConnection();
+                //Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password = myPassword;
+                connection3.ConnectionString = "Server=cis1.actx.edu;Database=project1;User Id=db1;Password = db10;";
+                connection3.Open();
+
+                using (SqlCommand dp = connection3.CreateCommand())
+                {
+
+                    dp.CommandText = "select Quantity from dbo.Inventory where ItemID=3;";
+
+                    using (SqlDataReader reader = dp.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Quant = reader.GetInt32(0);
                         }
+                    }
+                    //update the table.
+
+                    using (SqlCommand updateitem = connection3.CreateCommand())
+                    {
+                        updateitem.CommandText = "update dbo.Inventory set Quantity = Quantity-1 where ItemID = 3 ;";
+                        var dpu = new SqlParameter("Quantity", SqlDbType.Int) { Value = (Quant - 1) };
+                        updateitem.Parameters.Add(dpu);
+                        updateitem.ExecuteNonQuery();
+
+
+
+                    }
+
+                }
+
+            }
                         if (chkLettuce.Checked == true)
                         {
                             txtOrdersList.Text += Item.letttuce + "\r\n";
                             Waiter.orders += Item.letttuce;
                             Item.runningTotal += Item.lettuceprice();
-                            Item.GetQuantity(1);
+                SqlConnection connection3 = new SqlConnection();
+                //Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password = myPassword;
+                connection3.ConnectionString = "Server=cis1.actx.edu;Database=project1;User Id=db1;Password = db10;";
+                connection3.Open();
+
+                using (SqlCommand dp = connection3.CreateCommand())
+                {
+
+                    dp.CommandText = "select Quantity from dbo.Inventory where ItemID=4;";
+
+                    using (SqlDataReader reader = dp.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Quant = reader.GetInt32(0);
                         }
+                    }
+                    //update the table.
+
+                    using (SqlCommand updateitem = connection3.CreateCommand())
+                    {
+                        updateitem.CommandText = "update dbo.Inventory set Quantity = Quantity-1 where ItemID = 4 ;";
+                        var dpu = new SqlParameter("Quantity", SqlDbType.Int) { Value = (Quant - 1) };
+                        updateitem.Parameters.Add(dpu);
+                        updateitem.ExecuteNonQuery();
+
+
+
+                    }
+
+                }
+            }
                         if (chkPickles.Checked == true)
                         {
                             txtOrdersList.Text += Item.pickle + "\r\n";
                             Waiter.orders += Item.pickle;
                             Item.runningTotal += Item.pickleprice();
-                            Item.GetQuantity(1);
+                SqlConnection connection3 = new SqlConnection();
+                //Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password = myPassword;
+                connection3.ConnectionString = "Server=cis1.actx.edu;Database=project1;User Id=db1;Password = db10;";
+                connection3.Open();
+
+                using (SqlCommand dp = connection3.CreateCommand())
+                {
+
+                    dp.CommandText = "select Quantity from dbo.Inventory where ItemID=5;";
+
+                    using (SqlDataReader reader = dp.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Quant = reader.GetInt32(0);
                         }
+                    }
+                    //update the table.
+
+                    using (SqlCommand updateitem = connection3.CreateCommand())
+                    {
+                        updateitem.CommandText = "update dbo.Inventory set Quantity = Quantity-1 where ItemID = 5 ;";
+                        var dpu = new SqlParameter("Quantity", SqlDbType.Int) { Value = (Quant - 1) };
+                        updateitem.Parameters.Add(dpu);
+                        updateitem.ExecuteNonQuery();
+
+
+
+                    }
+
+                }
+            }
                         if (chkHouseSalad.Checked == true)
                         {
                             txtOrdersList.Text += Item.housesalad + "\r\n";
                             Waiter.orders += Item.housesalad;
                             Item.runningTotal += Item.housesaladprice();
-                            Item.GetQuantity(1);
+                SqlConnection connection3 = new SqlConnection();
+                //Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password = myPassword;
+                connection3.ConnectionString = "Server=cis1.actx.edu;Database=project1;User Id=db1;Password = db10;";
+                connection3.Open();
+
+                using (SqlCommand dp = connection3.CreateCommand())
+                {
+
+                    dp.CommandText = "select Quantity from dbo.Inventory where ItemID=6;";
+
+                    using (SqlDataReader reader = dp.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Quant = reader.GetInt32(0);
                         }
+                    }
+                    //update the table.
+
+                    using (SqlCommand updateitem = connection3.CreateCommand())
+                    {
+                        updateitem.CommandText = "update dbo.Inventory set Quantity = Quantity-1 where ItemID = 6 ;";
+                        var dpu = new SqlParameter("Quantity", SqlDbType.Int) { Value = (Quant - 1) };
+                        updateitem.Parameters.Add(dpu);
+                        updateitem.ExecuteNonQuery();
+
+
+
+                    }
+
+                }
+            }
                         if (chkGardenSalad.Checked == true)
                         {
                             txtOrdersList.Text += Item.gardensalad + "\r\n";
                             Waiter.orders += Item.gardensalad;
                             Item.runningTotal += Item.gardensaladprice();
-                            Item.GetQuantity(1);
+                SqlConnection connection3 = new SqlConnection();
+                //Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password = myPassword;
+                connection3.ConnectionString = "Server=cis1.actx.edu;Database=project1;User Id=db1;Password = db10;";
+                connection3.Open();
+
+                using (SqlCommand dp = connection3.CreateCommand())
+                {
+
+                    dp.CommandText = "select Quantity from dbo.Inventory where ItemID=7;";
+
+                    using (SqlDataReader reader = dp.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Quant = reader.GetInt32(0);
                         }
+                    }
+                    //update the table.
+
+                    using (SqlCommand updateitem = connection3.CreateCommand())
+                    {
+                        updateitem.CommandText = "update dbo.Inventory set Quantity = Quantity-1 where ItemID = 7 ;";
+                        var dpu = new SqlParameter("Quantity", SqlDbType.Int) { Value = (Quant - 1) };
+                        updateitem.Parameters.Add(dpu);
+                        updateitem.ExecuteNonQuery();
+
+
+
+                    }
+
+                }
+            }
                         if (chkFruitSalad.Checked == true)
                         {
                             txtOrdersList.Text += Item.fruitsalad + "\r\n";
                             Waiter.orders += Item.fruitsalad;
                             Item.runningTotal += Item.fruitsaladprice();
+                SqlConnection connection3 = new SqlConnection();
+                //Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password = myPassword;
+                connection3.ConnectionString = "Server=cis1.actx.edu;Database=project1;User Id=db1;Password = db10;";
+                connection3.Open();
+
+                using (SqlCommand dp = connection3.CreateCommand())
+                {
+
+                    dp.CommandText = "select Quantity from dbo.Inventory where ItemID=8;";
+
+                    using (SqlDataReader reader = dp.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Quant = reader.GetInt32(0);
                         }
+                    }
+                    //update the table.
+
+                    using (SqlCommand updateitem = connection3.CreateCommand())
+                    {
+                        updateitem.CommandText = "update dbo.Inventory set Quantity = Quantity-1 where ItemID = 8 ;";
+                        var dpu = new SqlParameter("Quantity", SqlDbType.Int) { Value = (Quant - 1) };
+                        updateitem.Parameters.Add(dpu);
+                        updateitem.ExecuteNonQuery();
+
+
+
+                    }
+
+                }
+            }
                         if (chkPlainSalad.Checked == true)
                         {
                             txtOrdersList.Text += Item.plainsalad + "\r\n";
                             Waiter.orders += Item.plainsalad;
                             Item.runningTotal += Item.plainsaladprice();
-                            Item.GetQuantity(1);
+                SqlConnection connection3 = new SqlConnection();
+                //Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password = myPassword;
+                connection3.ConnectionString = "Server=cis1.actx.edu;Database=project1;User Id=db1;Password = db10;";
+                connection3.Open();
+
+                using (SqlCommand dp = connection3.CreateCommand())
+                {
+
+                    dp.CommandText = "select Quantity from dbo.Inventory where ItemID=9;";
+
+                    using (SqlDataReader reader = dp.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Quant = reader.GetInt32(0);
                         }
+                    }
+                    //update the table.
+
+                    using (SqlCommand updateitem = connection3.CreateCommand())
+                    {
+                        updateitem.CommandText = "update dbo.Inventory set Quantity = Quantity-1 where ItemID = 9 ;";
+                        var dpu = new SqlParameter("Quantity", SqlDbType.Int) { Value = (Quant - 1) };
+                        updateitem.Parameters.Add(dpu);
+                        updateitem.ExecuteNonQuery();
+
+
+
+                    }
+
+                }
+            }
                         if (chkCoke.Checked == true)
                         {
                             txtOrdersList.Text += Item.coke + "\r\n";
                             Waiter.orders += Item.coke;
                             Item.runningTotal += Item.cokeprice();
-                            Item.GetQuantity(1);
+                SqlConnection connection3 = new SqlConnection();
+                //Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password = myPassword;
+                connection3.ConnectionString = "Server=cis1.actx.edu;Database=project1;User Id=db1;Password = db10;";
+                connection3.Open();
+
+                using (SqlCommand dp = connection3.CreateCommand())
+                {
+
+                    dp.CommandText = "select Quantity from dbo.Inventory where ItemID=10;";
+
+                    using (SqlDataReader reader = dp.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Quant = reader.GetInt32(0);
                         }
+                    }
+                    //update the table.
+
+                    using (SqlCommand updateitem = connection3.CreateCommand())
+                    {
+                        updateitem.CommandText = "update dbo.Inventory set Quantity = Quantity-1 where ItemID = 10 ;";
+                        var dpu = new SqlParameter("Quantity", SqlDbType.Int) { Value = (Quant - 1) };
+                        updateitem.Parameters.Add(dpu);
+                        updateitem.ExecuteNonQuery();
+
+
+
+                    }
+
+                }
+            }
                         if (chkSprite.Checked == true)
                         {
                             txtOrdersList.Text += Item.sprite + "\r\n";
                             Waiter.orders += Item.sprite;
                             Item.runningTotal += Item.spriteprice();
-                            Item.GetQuantity(1);
+                SqlConnection connection3 = new SqlConnection();
+                //Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password = myPassword;
+                connection3.ConnectionString = "Server=cis1.actx.edu;Database=project1;User Id=db1;Password = db10;";
+                connection3.Open();
+
+                using (SqlCommand dp = connection3.CreateCommand())
+                {
+
+                    dp.CommandText = "select Quantity from dbo.Inventory where ItemID=11;";
+
+                    using (SqlDataReader reader = dp.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Quant = reader.GetInt32(0);
                         }
+                    }
+                    //update the table.
+
+                    using (SqlCommand updateitem = connection3.CreateCommand())
+                    {
+                        updateitem.CommandText = "update dbo.Inventory set Quantity = Quantity-1 where ItemID = 11 ;";
+                        var dpu = new SqlParameter("Quantity", SqlDbType.Int) { Value = (Quant - 1) };
+                        updateitem.Parameters.Add(dpu);
+                        updateitem.ExecuteNonQuery();
+
+
+
+                    }
+
+                }
+            }
                         if (chkRootBeer.Checked == true)
                         {
                             txtOrdersList.Text += Item.rootbeer + "\r\n";
                             Waiter.orders += Item.rootbeer;
                             Item.runningTotal += Item.rootbeerprice();
-                            Item.GetQuantity(1);
+                SqlConnection connection3 = new SqlConnection();
+                //Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password = myPassword;
+                connection3.ConnectionString = "Server=cis1.actx.edu;Database=project1;User Id=db1;Password = db10;";
+                connection3.Open();
+
+                using (SqlCommand dp = connection3.CreateCommand())
+                {
+
+                    dp.CommandText = "select Quantity from dbo.Inventory where ItemID=12;";
+
+                    using (SqlDataReader reader = dp.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Quant = reader.GetInt32(0);
                         }
+                    }
+                    //update the table.
+
+                    using (SqlCommand updateitem = connection3.CreateCommand())
+                    {
+                        updateitem.CommandText = "update dbo.Inventory set Quantity = Quantity-1 where ItemID = 12 ;";
+                        var dpu = new SqlParameter("Quantity", SqlDbType.Int) { Value = (Quant - 1) };
+                        updateitem.Parameters.Add(dpu);
+                        updateitem.ExecuteNonQuery();
+
+
+
+                    }
+
+                }
+            }
                         if (chkTea.Checked == true)
                         {
                             txtOrdersList.Text += Item.tea + "\r\n";
                             Waiter.orders += Item.tea;
                             Item.runningTotal += Item.teaprice();
-                            Item.GetQuantity(1);
+                SqlConnection connection3 = new SqlConnection();
+                //Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password = myPassword;
+                connection3.ConnectionString = "Server=cis1.actx.edu;Database=project1;User Id=db1;Password = db10;";
+                connection3.Open();
+
+                using (SqlCommand dp = connection3.CreateCommand())
+                {
+
+                    dp.CommandText = "select Quantity from dbo.Inventory where ItemID=13;";
+
+                    using (SqlDataReader reader = dp.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Quant = reader.GetInt32(0);
                         }
-                       
-                        txtTotal.Text = Item.runningTotal.ToString();
+                    }
+                    //update the table.
+
+                    using (SqlCommand updateitem = connection3.CreateCommand())
+                    {
+                        updateitem.CommandText = "update dbo.Inventory set Quantity = Quantity-1 where ItemID = 13 ;";
+                        var dpu = new SqlParameter("Quantity", SqlDbType.Int) { Value = (Quant - 1) };
+                        updateitem.Parameters.Add(dpu);
+                        updateitem.ExecuteNonQuery();
+
+
+
+                    }
+
+                }
+            }
+                        //item.c is the count for the orders
+            Item.c++;
+            txtTotal.Text = Item.runningTotal.ToString();
                         txtTax.Text = (Item.runningTotal * Item.Tax).ToString();
                         txtSubtotal.Text = (Item.runningTotal + (Item.runningTotal * Item.Tax)).ToString();
                         txtOrdersList.Text += "----------------------" + "\r\n";
@@ -457,9 +828,9 @@ namespace RestaurantManagement
                         //insertNewInventory.Parameters.Add(ttpriceParam);
                         //insertNewInventory.ExecuteNonQuery();
                         //}
-                    }
-                }
-            }
+                    
+                
+           
         }
 
         private void checkBox6_CheckedChanged(object sender, EventArgs e)
