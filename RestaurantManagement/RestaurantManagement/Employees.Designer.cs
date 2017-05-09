@@ -33,13 +33,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtNewStartDate = new System.Windows.Forms.TextBox();
-            this.txtNewPosition = new System.Windows.Forms.TextBox();
-            this.txtNewPhoneNumber = new System.Windows.Forms.TextBox();
-            this.txtNewAddress = new System.Windows.Forms.TextBox();
+            this.txtHours = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtWages = new System.Windows.Forms.TextBox();
+            this.txtEmpID = new System.Windows.Forms.TextBox();
             this.txtNewLastName = new System.Windows.Forms.TextBox();
             this.txtNewFirstName = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -47,8 +46,9 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnEmpLogout = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.cmbPosition = new System.Windows.Forms.ComboBox();
+            this.btnNextEmployee = new System.Windows.Forms.Button();
+            this.btnLastEmployee = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -66,43 +66,32 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(38, 121);
+            this.label6.Location = new System.Drawing.Point(48, 124);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 13);
+            this.label6.Size = new System.Drawing.Size(38, 13);
             this.label6.TabIndex = 13;
-            this.label6.Text = "Address:";
+            this.label6.Text = "Hours:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 142);
+            this.label5.Location = new System.Drawing.Point(42, 150);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 13);
+            this.label5.Size = new System.Drawing.Size(44, 13);
             this.label5.TabIndex = 12;
-            this.label5.Text = "Phone Number:";
+            this.label5.Text = "Wages:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(30, 173);
+            this.label4.Location = new System.Drawing.Point(39, 176);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 13);
             this.label4.TabIndex = 11;
             this.label4.Text = "Position:";
-
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(28, 196);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 13);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Start Date:";
             // 
             // label2
             // 
@@ -116,17 +105,17 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.btnLastEmployee);
+            this.groupBox1.Controls.Add(this.btnNextEmployee);
+            this.groupBox1.Controls.Add(this.cmbPosition);
+            this.groupBox1.Controls.Add(this.txtHours);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txtNewStartDate);
-            this.groupBox1.Controls.Add(this.txtNewPosition);
-            this.groupBox1.Controls.Add(this.txtNewPhoneNumber);
-            this.groupBox1.Controls.Add(this.txtNewAddress);
+            this.groupBox1.Controls.Add(this.txtWages);
+            this.groupBox1.Controls.Add(this.txtEmpID);
             this.groupBox1.Controls.Add(this.txtNewLastName);
             this.groupBox1.Controls.Add(this.txtNewFirstName);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label5);
@@ -140,34 +129,36 @@
             this.groupBox1.Text = "Employees Information";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // txtNewStartDate
+            // txtHours
             // 
-            this.txtNewStartDate.Location = new System.Drawing.Point(95, 199);
-            this.txtNewStartDate.Name = "txtNewStartDate";
-            this.txtNewStartDate.Size = new System.Drawing.Size(204, 20);
-            this.txtNewStartDate.TabIndex = 20;
+            this.txtHours.Location = new System.Drawing.Point(95, 121);
+            this.txtHours.Name = "txtHours";
+            this.txtHours.Size = new System.Drawing.Size(204, 20);
+            this.txtHours.TabIndex = 22;
             // 
-            // txtNewPosition
+            // label1
             // 
-            this.txtNewPosition.Location = new System.Drawing.Point(95, 173);
-            this.txtNewPosition.Name = "txtNewPosition";
-            this.txtNewPosition.Size = new System.Drawing.Size(204, 20);
-            this.txtNewPosition.TabIndex = 19;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(20, 48);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Employee ID:";
             // 
-            // txtNewPhoneNumber
+            // txtWages
             // 
-            this.txtNewPhoneNumber.Location = new System.Drawing.Point(95, 147);
-            this.txtNewPhoneNumber.Name = "txtNewPhoneNumber";
-            this.txtNewPhoneNumber.Size = new System.Drawing.Size(204, 20);
-            this.txtNewPhoneNumber.TabIndex = 18;
-
+            this.txtWages.Location = new System.Drawing.Point(95, 147);
+            this.txtWages.Name = "txtWages";
+            this.txtWages.Size = new System.Drawing.Size(204, 20);
+            this.txtWages.TabIndex = 18;
             // 
-            // txtNewAddress
+            // txtEmpID
             // 
-            this.txtNewAddress.Location = new System.Drawing.Point(95, 45);
-            this.txtNewAddress.Name = "txtNewAddress";
-            this.txtNewAddress.Size = new System.Drawing.Size(204, 20);
-            this.txtNewAddress.TabIndex = 17;
+            this.txtEmpID.Location = new System.Drawing.Point(95, 45);
+            this.txtEmpID.Name = "txtEmpID";
+            this.txtEmpID.Size = new System.Drawing.Size(204, 20);
+            this.txtEmpID.TabIndex = 17;
             // 
             // txtNewLastName
             // 
@@ -216,7 +207,6 @@
             this.btnSave.TabIndex = 19;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
-
             // 
             // button2
             // 
@@ -226,7 +216,6 @@
             this.button2.TabIndex = 20;
             this.button2.Text = "Delete";
             this.button2.UseVisualStyleBackColor = true;
-
             // 
             // btnEmpLogout
             // 
@@ -238,22 +227,40 @@
             this.btnEmpLogout.UseVisualStyleBackColor = true;
             this.btnEmpLogout.Click += new System.EventHandler(this.btnEmpLogout_Click);
             // 
-            // textBox1
+            // cmbPosition
             // 
-            this.textBox1.Location = new System.Drawing.Point(95, 121);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(204, 20);
-            this.textBox1.TabIndex = 22;
+            this.cmbPosition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPosition.FormattingEnabled = true;
+            this.cmbPosition.Items.AddRange(new object[] {
+            "Manager",
+            "Waiter",
+            "Cook",
+            "Busboy",
+            "Host"});
+            this.cmbPosition.Location = new System.Drawing.Point(97, 176);
+            this.cmbPosition.Name = "cmbPosition";
+            this.cmbPosition.Size = new System.Drawing.Size(201, 21);
+            this.cmbPosition.TabIndex = 23;
             // 
-            // label1
+            // btnNextEmployee
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 48);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 13);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "Employee ID:";
+            this.btnNextEmployee.Location = new System.Drawing.Point(319, 232);
+            this.btnNextEmployee.Name = "btnNextEmployee";
+            this.btnNextEmployee.Size = new System.Drawing.Size(49, 29);
+            this.btnNextEmployee.TabIndex = 24;
+            this.btnNextEmployee.Text = ">";
+            this.btnNextEmployee.UseVisualStyleBackColor = true;
+            this.btnNextEmployee.Click += new System.EventHandler(this.btnNextEmployee_Click);
+            // 
+            // btnLastEmployee
+            // 
+            this.btnLastEmployee.Location = new System.Drawing.Point(5, 232);
+            this.btnLastEmployee.Name = "btnLastEmployee";
+            this.btnLastEmployee.Size = new System.Drawing.Size(49, 29);
+            this.btnLastEmployee.TabIndex = 25;
+            this.btnLastEmployee.Text = "<";
+            this.btnLastEmployee.UseVisualStyleBackColor = true;
+            this.btnLastEmployee.Click += new System.EventHandler(this.btnLastEmployee_Click);
             // 
             // Employees
             // 
@@ -282,21 +289,21 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.TextBox txtNewStartDate;
-        private System.Windows.Forms.TextBox txtNewPosition;
-        private System.Windows.Forms.TextBox txtNewPhoneNumber;
-        private System.Windows.Forms.TextBox txtNewAddress;
+        private System.Windows.Forms.TextBox txtWages;
+        private System.Windows.Forms.TextBox txtEmpID;
         private System.Windows.Forms.TextBox txtNewLastName;
         private System.Windows.Forms.TextBox txtNewFirstName;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnEmpLogout;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtHours;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cmbPosition;
+        private System.Windows.Forms.Button btnLastEmployee;
+        private System.Windows.Forms.Button btnNextEmployee;
     }
 }
