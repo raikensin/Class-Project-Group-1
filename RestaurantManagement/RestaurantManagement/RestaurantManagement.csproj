@@ -74,7 +74,6 @@
     <Compile Include="FloorPlan.Designer.cs">
       <DependentUpon>FloorPlan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Interfaces\IAdmin.cs" />
     <Compile Include="KitchenScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +143,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

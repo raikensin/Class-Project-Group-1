@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RestaurantManagement
 {
-    public class ManagerForm : Employee, IAdmin
+    public class Manager : Employee
     // When the manager logs in it will bring up the admin page
     // from here the manager will have the option to loin to the other forms
 
@@ -13,39 +13,39 @@ namespace RestaurantManagement
     // day  week month or year from the data base
 
 
-   
+    
     {
-
-        private string tableStatus;
-        private string tableAvailable;
-        private int orders;
-
-        public string TableStatus { get; set; }
-
-
-        public string TableAvailable { get; set; }
-
-
-        public string Orders { get; set; }
-
-        public void DeleteOrders()
+        public Manager(int employID, string empFirstName, string empLastName, int empHour, int empWage): base(employID, empFirstName, empLastName, empHour, empWage, "Manager")
         {
+
+        }
+        
+        //public string TableStatus { get; set; }
+
+
+        //public string TableAvailable { get; set; }
+
+
+        //public string Orders { get; set; }
+
+        //public void DeleteOrders()
+        //{
             
-        }
+        //}
 
-        public void OrderStatus()
-        {
+        //public void OrderStatus()
+        //{
 
-        }
+        //}
 
-        public void ViewOrders()
-        {
+        //public void ViewOrders()
+        //{
 
-        }
+        //}
 
-        public void ChangeTableStatus()
-        {
+        //public void ChangeTableStatus()
+        //{
          
-        }
+        //}
     }
 }

@@ -134,8 +134,16 @@ namespace RestaurantManagement
                         break;
                             
                 }
-                                
+                                             
             }
+            else
+            {
+                
+                MessageBox.Show("ID not found");
+            }
+
+            txtBoxLogin.Clear();
+
 
             //try
             //{

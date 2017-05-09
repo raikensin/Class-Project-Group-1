@@ -7,7 +7,13 @@ namespace RestaurantManagement
 {
     public class Busboy : Employee
     {
-        private string tableStatus;
+        public Busboy(int employID, string empFirstName, string empLastName, int empHour, int empWage) : base(employID, empFirstName, empLastName, empHour, empWage, "Busboy")
+        {
+        }
+
+
+    
+        //private string tableStatus;
 
         public string TableStatus { get; set; }
 

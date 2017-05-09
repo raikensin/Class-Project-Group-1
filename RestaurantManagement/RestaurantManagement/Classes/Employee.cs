@@ -7,16 +7,6 @@ namespace RestaurantManagement
 {
     public class Employee
     {
-        private int employeeID;
-        private string employeeFirstName;
-        private string employeeLastName;
-        private double hours;
-        private double wages;
-        private int hostLogin=1;
-        private int busboyLogin=2;
-        private int cookLogin=3;
-        private int managerLogin=4;
-        private int waiterLogin=5;
         public int EmployeeID { get; set; }
         
 
@@ -26,35 +16,29 @@ namespace RestaurantManagement
         public string EmployeeLastName { get; set; }
        
 
-        public double Hours { get; set; }
+        public int Hours { get; set; }
        
 
-        public double Wages
-        {
-            get
-            {
-                return wages;
-            }
-
-            set
-            {
-                wages = value;
-            }
-        }
-
-        public void Login()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void LogOff()
-        {
-            throw new System.NotImplementedException();
-        }
+        public int Wages { get; set; }
+       
 
         public void trackHours()
         {
             throw new System.NotImplementedException();
+        }
+
+
+        public string Position { get; set; }
+
+        
+        public Employee(int employID, string empFirstName, string empLastName, int empHour, int empWage, string position)
+        {
+            EmployeeID = employID;
+            EmployeeFirstName = empFirstName;
+            EmployeeLastName = empLastName;
+            Hours = empHour;
+            Wages = empWage;
+            Position = position;
         }
        
     }

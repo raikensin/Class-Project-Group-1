@@ -7,6 +7,7 @@ namespace RestaurantManagement
 {
     public class Seating
     {
+
         private int tableID;
         private string availabilty;
         private int hoursOccupied;

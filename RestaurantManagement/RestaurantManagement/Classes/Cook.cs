@@ -7,7 +7,10 @@ namespace RestaurantManagement
 {
     public class Cook : Employee
     {
-        private int orders;
+        public Cook(int employID, string empFirstName, string empLastName, int empHour, int empWage) : base(employID, empFirstName, empLastName, empHour, empWage, "Cook")
+        {
+        }
+        //private int orders;
 
         public string Orders { get; set; }
         
