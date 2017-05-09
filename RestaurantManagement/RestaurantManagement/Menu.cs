@@ -14,8 +14,9 @@ using System.Windows.Forms;
 
 namespace RestaurantManagement
 {
-    public partial class Menu : Form 
+    public partial class Menu : Form
     {
+        public int Num=0;
         public Menu()
         {
             InitializeComponent();
@@ -53,19 +54,42 @@ namespace RestaurantManagement
 
         private void button3_Click(object sender, EventArgs e)
         {
+
+                
+                SqlConnection conn = new SqlConnection();
+                conn.ConnectionString = "Server=cis1.actx.edu;Database=project1;User Id=db1;Password = db10;";
+                conn.Open();
+            using (SqlCommand readAllRecords = conn.CreateCommand())
+            {
+                readAllRecords.CommandText = "select OrderID from dbo.OrderTable";
+
+                using (SqlDataReader reader = readAllRecords.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Num = reader.GetInt32(0);
+                    }
+                }
+            }
+            //update to the next possible index for OrderID
+            Num = Num + 1;
+            
+
+
+            //----------------------
             //Send to the database so cook can recieve it
             SqlConnection connection = new SqlConnection();
             
             connection.ConnectionString = "Server=cis1.actx.edu;Database=project1;User Id=db1;Password = db10;";
             connection.Open();
-            
+
             try
             {
                 //-----------insert---------------
                 using (SqlCommand insertNewOrder = connection.CreateCommand())
                 {
                     insertNewOrder.CommandText = "insert into dbo.OrderTable values (@OrderID,@OrderDesc,@OrderViewed);";
-                    var OrderIDParam = new SqlParameter("OrderID", SqlDbType.Int) { Value = Item.c };
+                    var OrderIDParam = new SqlParameter("OrderID", SqlDbType.Int) { Value = Num };
                     var OrderParam = new SqlParameter("OrderDesc", SqlDbType.VarChar) { Value = txtOrdersList.Text };
                     var Orderview = new SqlParameter("OrderViewed", SqlDbType.Int) { Value = 0 };
 
@@ -73,9 +97,12 @@ namespace RestaurantManagement
                     insertNewOrder.Parameters.Add(OrderParam);
                     insertNewOrder.Parameters.Add(Orderview);
                     insertNewOrder.ExecuteNonQuery();
+                    
+
+
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Ordersfield from waiter.orders is blank.");
             }
@@ -123,26 +150,33 @@ namespace RestaurantManagement
                 //table should be stored from/to the database not stored in string
                 //string is for testing purpose.
                 table = "Table 1";
+                Seating.tableOccupied(1);
+
             }
             else if (chktable2.Checked == true)
             {
                 table = "Table 2";
+                Seating.tableOccupied(2);
             }
             else if (chktable3.Checked == true)
             {
                 table = "Table 3";
+                Seating.tableOccupied(3);
             }
             else if (chktable4.Checked == true)
             {
                 table = "Table 4";
+                Seating.tableOccupied(4);
             }
             else if (chktable5.Checked == true)
             {
                 table = "Table 5";
+                Seating.tableOccupied(5);
             }
             else if (chktable6.Checked == true)
             {
                 table = "Table 6";
+                Seating.tableOccupied(6);
             }
            
             txtOrdersList.Text += "----Order#" + Item.c + " for table: " + table + " ----- \r\n";

@@ -29,10 +29,11 @@ namespace RestaurantManagement
 
         private void btnTableStatus_Click(object sender, EventArgs e)
         {
+            if(radTable1Clean.Checked)
+            {
+                btnTable1.BackColor = Color.Green;
 
-            //Comment by adrian------ we need to change the table status not just the color; there is a variable that i have to use in my waiter class
-            //but right now we have it set up as a boolean. we cant use a boolean becuase that leaves us with only one of two scenarios, we have three 
-            //scenarios that can happen. I will change the varialbe when we discuss more about it in class. ----EOTP
+            }
         }
 
         private void btnReservation_Click(object sender, EventArgs e)
