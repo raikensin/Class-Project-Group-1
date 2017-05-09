@@ -32,7 +32,6 @@
             this.btnAssignTables = new System.Windows.Forms.Button();
             this.btnmenu = new System.Windows.Forms.Button();
             this.btnLogOut = new System.Windows.Forms.Button();
-            this.btnHostBusBoy = new System.Windows.Forms.Button();
             this.btnCook = new System.Windows.Forms.Button();
             this.btnInventoryReports = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -81,18 +80,9 @@
             this.btnLogOut.UseVisualStyleBackColor = true;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
-            // btnHostBusBoy
-            // 
-            this.btnHostBusBoy.Location = new System.Drawing.Point(197, 112);
-            this.btnHostBusBoy.Name = "btnHostBusBoy";
-            this.btnHostBusBoy.Size = new System.Drawing.Size(143, 50);
-            this.btnHostBusBoy.TabIndex = 20;
-            this.btnHostBusBoy.Text = "Host and Bus";
-            this.btnHostBusBoy.UseVisualStyleBackColor = true;
-            // 
             // btnCook
             // 
-            this.btnCook.Location = new System.Drawing.Point(23, 272);
+            this.btnCook.Location = new System.Drawing.Point(197, 112);
             this.btnCook.Name = "btnCook";
             this.btnCook.Size = new System.Drawing.Size(147, 50);
             this.btnCook.TabIndex = 21;
@@ -114,10 +104,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(394, 356);
+            this.ClientSize = new System.Drawing.Size(372, 260);
             this.Controls.Add(this.btnInventoryReports);
             this.Controls.Add(this.btnCook);
-            this.Controls.Add(this.btnHostBusBoy);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.btnmenu);
             this.Controls.Add(this.btnAssignTables);
@@ -136,7 +125,6 @@
         private System.Windows.Forms.Button btnAssignTables;
         private System.Windows.Forms.Button btnmenu;
         private System.Windows.Forms.Button btnLogOut;
-        private System.Windows.Forms.Button btnHostBusBoy;
         private System.Windows.Forms.Button btnCook;
         private System.Windows.Forms.Button btnInventoryReports;
     }

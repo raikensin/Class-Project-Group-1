@@ -62,6 +62,7 @@ namespace RestaurantManagement
 
         private void btnEmpLogout_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Login newLogOut = new Login();
             newLogOut.ShowDialog();
         }
@@ -120,7 +121,7 @@ namespace RestaurantManagement
                 btnNextEmployee.Enabled = false;
             }
         }
-
+        //create button to view next employee
         private void btnNextEmployee_Click(object sender, EventArgs e)
         {
             if(employeeIndex < empList.Count - 1)
@@ -145,13 +146,14 @@ namespace RestaurantManagement
             txtWages.Text = currentEmployee.Wages.ToString();
             cmbPosition.Text = currentEmployee.Position;
         }
-
+        //Create button to view last employee
         private void btnLastEmployee_Click(object sender, EventArgs e)
         {
             if (employeeIndex > 0)
             {
                 employeeIndex--;
                 LoadEmployee(employeeIndex);
+                btnNextEmployee.Enabled = true;
             }
             if (employeeIndex == 0)
             {

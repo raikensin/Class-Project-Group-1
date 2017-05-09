@@ -132,6 +132,10 @@ namespace RestaurantManagement
                         this.Hide();
                         new KitchenScreen().Show();
                         break;
+                    case "Busboy":
+                        this.Hide();
+                        new FloorPlan().Show();
+                        break;
                             
                 }
                                              
