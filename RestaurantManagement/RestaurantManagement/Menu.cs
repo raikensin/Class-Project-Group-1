@@ -64,7 +64,7 @@ namespace RestaurantManagement
                 //-----------insert---------------
                 using (SqlCommand insertNewOrder = connection.CreateCommand())
                 {
-                    insertNewOrder.CommandText = "insert into dbo.OrderTable values (@OrderID,@OrderDesc@OrderViewed);";
+                    insertNewOrder.CommandText = "insert into dbo.OrderTable values (@OrderID,@OrderDesc,@OrderViewed);";
                     var OrderIDParam = new SqlParameter("OrderID", SqlDbType.Int) { Value = Item.c };
                     var OrderParam = new SqlParameter("OrderDesc", SqlDbType.VarChar) { Value = txtOrdersList.Text };
                     var Orderview = new SqlParameter("OrderViewed", SqlDbType.Int) { Value = 0 };
@@ -75,10 +75,11 @@ namespace RestaurantManagement
                     insertNewOrder.ExecuteNonQuery();
                 }
             }
-            catch
+            catch(Exception ex)
             {
                 MessageBox.Show("Ordersfield from waiter.orders is blank.");
             }
+
 
             //clear checkboxes
             chkHamburger.Checked = false;
