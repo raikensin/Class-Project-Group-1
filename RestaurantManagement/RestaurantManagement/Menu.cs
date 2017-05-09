@@ -8,13 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data.Sql;
-using System.Data;
+
 using System.Windows.Forms;
 
 
 namespace RestaurantManagement
 {
-    public partial class Menu : Form 
+    public partial class Menu : Form
     {
         public Menu()
         {
@@ -845,6 +845,16 @@ namespace RestaurantManagement
         }
 
         private void txtOrdersList_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTax_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSubtotal_TextChanged(object sender, EventArgs e)
         {
 
         }

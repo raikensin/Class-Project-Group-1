@@ -48,8 +48,7 @@ namespace RestaurantManagement
                     while (reader.Read())
                     {
                         rec += reader.GetString(1) + " \r\n";
-                        //rec += reader.GetString(2);
-                        
+
                         txtOrder1.Text=rec;
                     }
                 }
