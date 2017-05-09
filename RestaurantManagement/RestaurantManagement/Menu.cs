@@ -102,6 +102,9 @@ namespace RestaurantManagement
             chktable5.Checked = false;
             chktable6.Checked = false;
             txtOrdersList.Clear();
+            txtSubtotal.Clear();
+            txtTax.Clear();
+            txtTotal.Clear();
 
         }
 
