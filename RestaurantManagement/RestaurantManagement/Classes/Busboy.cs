@@ -37,7 +37,7 @@ namespace RestaurantManagement
 
             using (SqlCommand updateitem = connection.CreateCommand())
             {
-                updateitem.CommandText = "update dbo.Seating set TableStatus = 'occupied'  where TableID =" + num + ";";
+                updateitem.CommandText = "update dbo.Seating set TableStatus = 'clean'  where TableID =" + num + ";";
                 var tableParam = new SqlParameter("TableStatus", SqlDbType.VarChar) { Value = "clean" };
                 updateitem.Parameters.Add(tableParam);
                 updateitem.ExecuteNonQuery();
@@ -69,7 +69,7 @@ namespace RestaurantManagement
 
             using (SqlCommand updateitem = connection.CreateCommand())
             {
-                updateitem.CommandText = "update dbo.Seating set TableStatus = 'occupied'  where TableID =" + num + ";";
+                updateitem.CommandText = "update dbo.Seating set TableStatus = 'dirty'  where TableID =" + num + ";";
                 var tableParam = new SqlParameter("TableStatus", SqlDbType.VarChar) { Value = "dirty" };
                 updateitem.Parameters.Add(tableParam);
                 updateitem.ExecuteNonQuery();
