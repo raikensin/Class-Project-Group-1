@@ -147,7 +147,7 @@ namespace RestaurantManagement
             }
 
             txtBoxLogin.Clear();
-
+            DateTime.Now.ToString("HH:mm:ss", System.Globalization.DateTimeFormatInfo.InvariantInfo);
 
             //try
             //{
@@ -182,31 +182,13 @@ namespace RestaurantManagement
 
         }
 
+        // this will show log out user current time
         private void btnEndShift_Click(object sender, EventArgs e)
         {
-            
-    CloseSockets();
-    this.Hide();
-    serverlogin login = new serverlogin();
-
-    login.Login += new EventHandler(serverlogin_Login);
-    login.Cancel += new EventHandler(serverlogin_Cancel);
-
-    login.Show();
+            string time = DateTime.Now.ToString("HH:mm:ss", System.Globalization.DateTimeFormatInfo.InvariantInfo);
+            MessageBox.Show("You Clock Out at " + time);
+        }
+    }
 }
-
-private void serverlogin_Login(object sender, EventArgs args)
-        {
-            this.Show();
-            // do login
-        }
-
-        private void serverlogin_Cancel(object sender, EventArgs args)
-        {
-            Application.Exit();
-            // do exit
-        }
-    }
-    }
 
 

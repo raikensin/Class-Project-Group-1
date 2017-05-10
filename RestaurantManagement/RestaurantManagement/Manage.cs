@@ -17,7 +17,7 @@ namespace RestaurantManagement
         {
             InitializeComponent();
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -44,6 +44,7 @@ namespace RestaurantManagement
         private void btnmenu_Click(object sender, EventArgs e)
         // if menu button is clicked on manager form it will open the menu
         {
+            this.Close();
             Menu newMenu = new Menu();
             newMenu.ShowDialog();
         }
@@ -51,13 +52,15 @@ namespace RestaurantManagement
         private void btnAssignTables_Click(object sender, EventArgs e)
         // if floor button is clicked it will open the floor plan
         {
+            this.Close();
             FloorPlan newFloorPlan = new FloorPlan();
             newFloorPlan.ShowDialog();
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            // if the logout button is clicked it will open the login screen 
+            // if the logout button is clicked it will open the login screen
+            this.Close(); 
             Login newLogOut = new Login();
             newLogOut.ShowDialog();
         }
@@ -65,6 +68,7 @@ namespace RestaurantManagement
         private void btnCook_Click(object sender, EventArgs e)
         // if the kitchen screen button is clicked it will open the kitchen screen 
         {
+            this.Close();
             KitchenScreen newKitchenScreen = new KitchenScreen();
             newKitchenScreen.ShowDialog();
 
@@ -73,6 +77,7 @@ namespace RestaurantManagement
         private void btnAddEmployee_Click(object sender, EventArgs e)
         // if the add employee button is clicked it will open the employees form (and ideally add the new employee to the database)
         {
+            this.Close();
             Employees showEmployees = new Employees();
             showEmployees.ShowDialog();
         }
@@ -80,6 +85,7 @@ namespace RestaurantManagement
         private void btnHostBusBoy_Click(object sender, EventArgs e)
         // if the floor plan is synced it will open the floor plan
         {
+            this.Close();
             FloorPlan newFloorPlan = new FloorPlan();
             newFloorPlan.ShowDialog();
         }
