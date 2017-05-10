@@ -10,7 +10,7 @@ using System.Data.SqlClient;
 using System.Data.Sql;
 using System.Data;
 using System.Windows.Forms;
-
+using RestaurantManagement.Classes;
 
 namespace RestaurantManagement
 {

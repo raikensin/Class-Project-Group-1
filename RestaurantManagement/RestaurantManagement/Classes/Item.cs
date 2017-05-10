@@ -29,7 +29,7 @@ namespace RestaurantManagement.Classes
 
             public static double Hamburgerprice()
             {
-                return 15.75;
+            return 15.75;
             }
             public static double doublepattyprice()
             {
@@ -96,4 +96,3 @@ namespace RestaurantManagement.Classes
             }
     }
 }
-
