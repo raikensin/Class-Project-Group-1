@@ -45,6 +45,7 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.btnEnter = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnEndShift = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn1LoginForm
@@ -273,6 +274,21 @@
             this.label1.Text = "Enter Your Number";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnEndShift
+            // 
+            this.btnEndShift.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnEndShift.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEndShift.BackgroundImage")));
+            this.btnEndShift.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnEndShift.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnEndShift.Image = ((System.Drawing.Image)(resources.GetObject("btnEndShift.Image")));
+            this.btnEndShift.Location = new System.Drawing.Point(12, 338);
+            this.btnEndShift.Name = "btnEndShift";
+            this.btnEndShift.Size = new System.Drawing.Size(103, 37);
+            this.btnEndShift.TabIndex = 16;
+            this.btnEndShift.Text = "End Shift";
+            this.btnEndShift.UseVisualStyleBackColor = false;
+            this.btnEndShift.Click += new System.EventHandler(this.btnEndShift_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -281,6 +297,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(772, 413);
+            this.Controls.Add(this.btnEndShift);
             this.Controls.Add(this.btnEnter);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.txtBoxLogin);
@@ -324,6 +341,7 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.Button btnEnter;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnEndShift;
     }
 }
 

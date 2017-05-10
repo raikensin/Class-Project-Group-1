@@ -181,6 +181,32 @@ namespace RestaurantManagement
 
 
         }
-    }
+
+        private void btnEndShift_Click(object sender, EventArgs e)
+        {
+            
+    CloseSockets();
+    this.Hide();
+    serverlogin login = new serverlogin();
+
+    login.Login += new EventHandler(serverlogin_Login);
+    login.Cancel += new EventHandler(serverlogin_Cancel);
+
+    login.Show();
 }
+
+private void serverlogin_Login(object sender, EventArgs args)
+        {
+            this.Show();
+            // do login
+        }
+
+        private void serverlogin_Cancel(object sender, EventArgs args)
+        {
+            Application.Exit();
+            // do exit
+        }
+    }
+    }
+
 

@@ -1,4 +1,10 @@
-﻿using System;
+﻿// Group 1 Project
+// 05/09/2017
+// COSC 2330 - 002
+// Final Project Team 1
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
