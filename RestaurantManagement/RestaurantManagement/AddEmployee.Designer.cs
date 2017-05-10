@@ -129,9 +129,10 @@ namespace RestaurantManagement
             this.label6.Location = new System.Drawing.Point(52, 96);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 13);
+            this.label6.Size = new System.Drawing.Size(38, 13);
             this.label6.TabIndex = 25;
-            this.label6.Text = "Address:";
+            this.label6.Text = "Hours:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
@@ -146,12 +147,12 @@ namespace RestaurantManagement
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(20, 117);
+            this.label5.Location = new System.Drawing.Point(52, 122);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 13);
+            this.label5.Size = new System.Drawing.Size(44, 13);
             this.label5.TabIndex = 24;
-            this.label5.Text = "Phone Number:";
+            this.label5.Text = "Wages:";
             // 
             // btnBack
             // 

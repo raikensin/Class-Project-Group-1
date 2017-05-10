@@ -52,14 +52,14 @@
             this.radTable4Occ = new System.Windows.Forms.RadioButton();
             this.radTable4Clean = new System.Windows.Forms.RadioButton();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.radTble5Dirty = new System.Windows.Forms.RadioButton();
+            this.radTable5Dirty = new System.Windows.Forms.RadioButton();
             this.radTable5Occ = new System.Windows.Forms.RadioButton();
             this.radTable5Clean = new System.Windows.Forms.RadioButton();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.radTable6Dirty = new System.Windows.Forms.RadioButton();
             this.radTable6Occ = new System.Windows.Forms.RadioButton();
             this.radTable6Clean = new System.Windows.Forms.RadioButton();
-            this.btnExit = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -345,7 +345,7 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.radTble5Dirty);
+            this.groupBox5.Controls.Add(this.radTable5Dirty);
             this.groupBox5.Controls.Add(this.radTable5Occ);
             this.groupBox5.Controls.Add(this.radTable5Clean);
             this.groupBox5.Location = new System.Drawing.Point(383, 183);
@@ -356,17 +356,17 @@
             this.groupBox5.Text = "Table 5 Status";
             this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
             // 
-            // radTble5Dirty
+            // radTable5Dirty
             // 
-            this.radTble5Dirty.AutoSize = true;
-            this.radTble5Dirty.Location = new System.Drawing.Point(7, 67);
-            this.radTble5Dirty.Name = "radTble5Dirty";
-            this.radTble5Dirty.Size = new System.Drawing.Size(46, 17);
-            this.radTble5Dirty.TabIndex = 2;
-            this.radTble5Dirty.TabStop = true;
-            this.radTble5Dirty.Text = "Dirty";
-            this.radTble5Dirty.UseVisualStyleBackColor = true;
-            this.radTble5Dirty.CheckedChanged += new System.EventHandler(this.radTble5Dirty_CheckedChanged);
+            this.radTable5Dirty.AutoSize = true;
+            this.radTable5Dirty.Location = new System.Drawing.Point(7, 67);
+            this.radTable5Dirty.Name = "radTable5Dirty";
+            this.radTable5Dirty.Size = new System.Drawing.Size(46, 17);
+            this.radTable5Dirty.TabIndex = 2;
+            this.radTable5Dirty.TabStop = true;
+            this.radTable5Dirty.Text = "Dirty";
+            this.radTable5Dirty.UseVisualStyleBackColor = true;
+            this.radTable5Dirty.CheckedChanged += new System.EventHandler(this.radTble5Dirty_CheckedChanged);
             // 
             // radTable5Occ
             // 
@@ -441,15 +441,15 @@
             this.radTable6Clean.UseVisualStyleBackColor = true;
             this.radTable6Clean.CheckedChanged += new System.EventHandler(this.radTable6Clean_CheckedChanged);
             // 
-            // btnExit
+            // btnLogout
             // 
-            this.btnExit.Location = new System.Drawing.Point(19, 527);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(116, 32);
-            this.btnExit.TabIndex = 12;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.btnLogout.Location = new System.Drawing.Point(19, 527);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(116, 32);
+            this.btnLogout.TabIndex = 12;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // FloorPlan
             // 
@@ -457,7 +457,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(556, 571);
-            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -517,13 +517,13 @@
         private System.Windows.Forms.RadioButton radTable4Occ;
         private System.Windows.Forms.RadioButton radTable4Clean;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.RadioButton radTble5Dirty;
+        private System.Windows.Forms.RadioButton radTable5Dirty;
         private System.Windows.Forms.RadioButton radTable5Occ;
         private System.Windows.Forms.RadioButton radTable5Clean;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.RadioButton radTable6Dirty;
         private System.Windows.Forms.RadioButton radTable6Occ;
         private System.Windows.Forms.RadioButton radTable6Clean;
-        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnLogout;
     }
 }

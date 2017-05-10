@@ -395,7 +395,7 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            //this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -406,7 +406,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(114, 21);
             this.button2.TabIndex = 11;
-            this.button2.Text = "Exit";
+            this.button2.Text = "Logout";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
