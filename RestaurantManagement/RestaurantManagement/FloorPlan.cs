@@ -29,10 +29,101 @@ namespace RestaurantManagement
 
         private void btnTableStatus_Click(object sender, EventArgs e)
         {
+            //check table 1
             if(radTable1Clean.Checked)
             {
                 btnTable1.BackColor = Color.Green;
-
+                Busboy.tableClean(1);
+            }
+            else if(radTable1Dirty.Checked)
+            {
+                btnTable1.BackColor = Color.Red;
+                Busboy.tableDirty(1);
+            }
+            else if (radTable1Occ.Checked)
+            {
+                btnTable1.BackColor = Color.Yellow;
+                Busboy.tableOccupied(1);
+            }
+            //check table 2 
+            if (radTable2Clean.Checked)
+            {
+                btnTable2.BackColor = Color.Green;
+                Busboy.tableClean(2);
+            }
+            else if (radTable2Dirty.Checked)
+            {
+                btnTable2.BackColor = Color.Red;
+                Busboy.tableDirty(2);
+            }
+            else if (radTable2Occ.Checked)
+            {
+                btnTable2.BackColor = Color.Yellow;
+                Busboy.tableOccupied(2);
+            }
+            //check table 3
+            if (radTable3Clean.Checked)
+            {
+                btnTable3.BackColor = Color.Green;
+                Busboy.tableClean(3);
+            }
+            else if (radTable3Dirty.Checked)
+            {
+                btnTable3.BackColor = Color.Red;
+                Busboy.tableDirty(3);
+            }
+            else if (radTable3Occ.Checked)
+            {
+                btnTable3.BackColor = Color.Yellow;
+                Busboy.tableOccupied(3);
+            }
+            //check table 4
+            if (radTable4Clean.Checked)
+            {
+                btnTable4.BackColor = Color.Green;
+                Busboy.tableClean(4);
+            }
+            else if (radTable4Dirty.Checked)
+            {
+                btnTable4.BackColor = Color.Red;
+                Busboy.tableDirty(4);
+            }
+            else if (radTable4Occ.Checked)
+            {
+                btnTable4.BackColor = Color.Yellow;
+                Busboy.tableOccupied(4);
+            }
+            //check table 5
+            if (radTable5Clean.Checked)
+            {
+                btnTable5.BackColor = Color.Green;
+                Busboy.tableClean(5);
+            }
+            else if (radTable5Dirty.Checked)
+            {
+                btnTable5.BackColor = Color.Red;
+                Busboy.tableDirty(5);
+            }
+            else if (radTable5Occ.Checked)
+            {
+                btnTable5.BackColor = Color.Yellow;
+                Busboy.tableOccupied(5);
+            }
+            //check table 6
+            if (radTable6Clean.Checked)
+            {
+                btnTable6.BackColor = Color.Green;
+                Busboy.tableClean(6);
+            }
+            else if (radTable6Dirty.Checked)
+            {
+                btnTable6.BackColor = Color.Red;
+                Busboy.tableDirty(6);
+            }
+            else if (radTable6Occ.Checked)
+            {
+                btnTable6.BackColor = Color.Yellow;
+                Busboy.tableOccupied(6);
             }
         }
 

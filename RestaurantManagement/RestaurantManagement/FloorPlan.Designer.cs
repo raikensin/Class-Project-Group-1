@@ -52,7 +52,7 @@
             this.radTable4Occ = new System.Windows.Forms.RadioButton();
             this.radTable4Clean = new System.Windows.Forms.RadioButton();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.radTble5Dirty = new System.Windows.Forms.RadioButton();
+            this.radTable5Dirty = new System.Windows.Forms.RadioButton();
             this.radTable5Occ = new System.Windows.Forms.RadioButton();
             this.radTable5Clean = new System.Windows.Forms.RadioButton();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -345,7 +345,7 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.radTble5Dirty);
+            this.groupBox5.Controls.Add(this.radTable5Dirty);
             this.groupBox5.Controls.Add(this.radTable5Occ);
             this.groupBox5.Controls.Add(this.radTable5Clean);
             this.groupBox5.Location = new System.Drawing.Point(383, 183);
@@ -356,17 +356,17 @@
             this.groupBox5.Text = "Table 5 Status";
             this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
             // 
-            // radTble5Dirty
+            // radTable5Dirty
             // 
-            this.radTble5Dirty.AutoSize = true;
-            this.radTble5Dirty.Location = new System.Drawing.Point(7, 67);
-            this.radTble5Dirty.Name = "radTble5Dirty";
-            this.radTble5Dirty.Size = new System.Drawing.Size(46, 17);
-            this.radTble5Dirty.TabIndex = 2;
-            this.radTble5Dirty.TabStop = true;
-            this.radTble5Dirty.Text = "Dirty";
-            this.radTble5Dirty.UseVisualStyleBackColor = true;
-            this.radTble5Dirty.CheckedChanged += new System.EventHandler(this.radTble5Dirty_CheckedChanged);
+            this.radTable5Dirty.AutoSize = true;
+            this.radTable5Dirty.Location = new System.Drawing.Point(7, 67);
+            this.radTable5Dirty.Name = "radTable5Dirty";
+            this.radTable5Dirty.Size = new System.Drawing.Size(46, 17);
+            this.radTable5Dirty.TabIndex = 2;
+            this.radTable5Dirty.TabStop = true;
+            this.radTable5Dirty.Text = "Dirty";
+            this.radTable5Dirty.UseVisualStyleBackColor = true;
+            this.radTable5Dirty.CheckedChanged += new System.EventHandler(this.radTble5Dirty_CheckedChanged);
             // 
             // radTable5Occ
             // 
@@ -517,7 +517,7 @@
         private System.Windows.Forms.RadioButton radTable4Occ;
         private System.Windows.Forms.RadioButton radTable4Clean;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.RadioButton radTble5Dirty;
+        private System.Windows.Forms.RadioButton radTable5Dirty;
         private System.Windows.Forms.RadioButton radTable5Occ;
         private System.Windows.Forms.RadioButton radTable5Clean;
         private System.Windows.Forms.GroupBox groupBox6;
