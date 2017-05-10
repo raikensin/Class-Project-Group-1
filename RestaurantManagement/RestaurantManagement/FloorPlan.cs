@@ -17,6 +17,27 @@ namespace RestaurantManagement
             InitializeComponent();
         }
 
+        //trying to read the table status from sql to change the table color
+        //    private bool tableVerify(string TableStatus)
+        //{
+        //    bool output = true;
+
+        //    SqlConnection connection = new SqlConnection("Server=cis1.actx.edu;Database=project1;User Id=db1;Password = db10;");
+
+        //    connection.Open();
+        //    SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM dbo.Seating WHERE TableStatus=" + Tabl.ToString(), connection);
+
+        //    DataTable dt = new DataTable(); //this is creating a virtual table  
+        //    sda.Fill(dt);
+        //    if (dt.Rows.Count > 0)
+        //    {
+        //        output = false;
+
+        //    }
+
+        //    return output;
+        //}
+    
         private void btnTable4_Click(object sender, EventArgs e)
         {
 
