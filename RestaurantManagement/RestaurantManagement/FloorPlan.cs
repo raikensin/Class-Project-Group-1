@@ -255,6 +255,8 @@ namespace RestaurantManagement
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+            Login newLogOut = new Login();
+            newLogOut.ShowDialog();
 
         }
 

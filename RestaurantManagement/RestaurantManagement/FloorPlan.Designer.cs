@@ -59,7 +59,7 @@
             this.radTable6Dirty = new System.Windows.Forms.RadioButton();
             this.radTable6Occ = new System.Windows.Forms.RadioButton();
             this.radTable6Clean = new System.Windows.Forms.RadioButton();
-            this.btnExit = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -441,15 +441,15 @@
             this.radTable6Clean.UseVisualStyleBackColor = true;
             this.radTable6Clean.CheckedChanged += new System.EventHandler(this.radTable6Clean_CheckedChanged);
             // 
-            // btnExit
+            // btnLogout
             // 
-            this.btnExit.Location = new System.Drawing.Point(19, 527);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(116, 32);
-            this.btnExit.TabIndex = 12;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.btnLogout.Location = new System.Drawing.Point(19, 527);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(116, 32);
+            this.btnLogout.TabIndex = 12;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // FloorPlan
             // 
@@ -457,7 +457,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(556, 571);
-            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -524,6 +524,6 @@
         private System.Windows.Forms.RadioButton radTable6Dirty;
         private System.Windows.Forms.RadioButton radTable6Occ;
         private System.Windows.Forms.RadioButton radTable6Clean;
-        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnLogout;
     }
 }

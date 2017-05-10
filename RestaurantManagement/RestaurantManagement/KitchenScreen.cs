@@ -75,6 +75,7 @@ namespace RestaurantManagement
 
         private void btnCookLogout_Click(object sender, EventArgs e)
         {
+            this.Close();
             Login newLogOut = new Login();
             newLogOut.ShowDialog();
         }

@@ -139,6 +139,8 @@ namespace RestaurantManagement
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+            Login newLogOut = new Login();
+            newLogOut.ShowDialog();
         }
 
         private void btnAddOrder_Click(object sender, EventArgs e)
