@@ -10,6 +10,7 @@ namespace RestaurantManagement
 
         public Host(int employID, string empFirstName, string empLastName, int empHour, int empWage) : base(employID, empFirstName, empLastName, empHour, empWage, "Host")
         {
+            
         }
         private string tableStatus;
 
